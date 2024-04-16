@@ -1,0 +1,50 @@
+﻿@model User
+
+<h6 class="mb-0 text-uppercase">@Model.UserFullName</h6>
+<hr />
+<div class="card">
+    <div class="card-body">
+        <div class="p-4 border rounded">
+            <form class="row g-3 needs-validation" method="post" enctype="multipart/form-data">
+                <div class="col-md-4">
+                    <label class="form-label">User Name</label>
+                    <input type="text" class="form-control" asp-for="UserFullName">
+                    <span class="text-danger" asp-validation-for="UserFullName"></span>
+                </div>
+                <div class="col-md-4">
+                    <label class="form-label">User Password</label>
+                    <input type="text" class="form-control" asp-for="UserPassword">
+                    <span class="text-danger" asp-validation-for="UserPassword"></span>
+                </div>
+                <div class="col-md-4">
+                    <label class="form-label">User Mail</label>
+                    <input type="email" class="form-control" asp-for="UserEmail">
+                    <span class="text-danger" asp-validation-for="UserEmail"></span>
+                </div>
+                <div class="col-md-4">
+                    <label class="form-label">Role</label>
+                    <select class="form-control" asp-for="Role" placeholder="User Role">
+                        <option value="Admin">Admin</option>
+                        <option value="Customer">Customer</option>
+                    </select>
+                </div>
+                <div class="col-md-4">
+                    <label class="form-label">Create Date</label>
+                    <input type="date" class="form-control" asp-for="CreatedDate" readonly>
+                </div>
+                <div class="col-md-4">
+                    <label class="form-label">Update Date</label>
+                    <input type="date" class="form-control" asp-for="UpdateDate" readonly>
+                </div>
+                <div class="col-12">
+                    <label class="form-label">User Image</label>
+                    <input class="form-control mb-3" type="file" name="img" id="img" accept="image/*" />
+                </div>
+                <div class="col-12">
+                    <button class="btn btn-success m-1 px-5" type="submit">Save</button>
+                    <a href="/Management/Home/Index" class="btn btn-secondary m-1 px-5">Cancel</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

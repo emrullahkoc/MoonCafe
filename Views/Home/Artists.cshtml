@@ -1,0 +1,37 @@
+﻿@model List<Artist>
+
+<div class="container-fluid bg-breadcrumb">
+    <div class="container text-center" style="max-width: 900px;">
+        <h1 class="text-white display-3 mb-4">
+            Artists</h1>
+    </div>
+</div>
+<div class="container-fluid guide">
+    <div class="container py-5">
+        <div class="mx-auto text-center mb-5" style="max-width: 900px;">
+            <h1 class="mb-0">Talented Artists Together</h1>
+        </div>
+        <div class="row g-4">
+            @foreach (var item in Model)
+            {
+                <div class="col-md-6 col-lg-3">
+                    <div class="guide-item">
+                        <a href="/Home/ArtistsDetails/@item.Id">
+                        <div class="guide-img">
+                            <div class="guide-img-efects">
+                                <img src="@item.ArtistImageUrl" class="img-fluid w-100 rounded-top">
+                            </div>
+                        </div>
+                        <div class="guide-title text-center rounded-bottom p-4">
+                            <div class="guide-title-inner">
+                                <h4 class="mt-3">@item.ArtistName</h4>
+                                <p class="mb-0">Birth Date | @item.ArtistBirthDate.ToString("dd MMMM yyyy")</p>
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>

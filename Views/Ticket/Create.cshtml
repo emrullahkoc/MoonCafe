@@ -1,0 +1,85 @@
+﻿@model Activity
+
+<div class="container-fluid booking py-5">
+    <div class="container text-center" style="max-width: 900px;">
+    </div>
+</div>
+@if (Model.ActivityDate >= DateTime.Now)
+{
+    <div class="container-fluid booking py-5">
+        <h1 class="text-white display-3 mb-4 container text-center">
+            Buy Tickets
+        </h1>
+        <div class="container py-5">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6">
+                    <div class="blog-item">
+                        <div class="blog-img">
+                            <div class="blog-img-inner">
+                                <img class="img-fluid" style="object-fit: cover; border-radius: .5rem 0 0 .5rem;" src="@Model.ActivityImageUrl">
+                            </div>
+                        </div>
+                        <div class="blog-content border border-top-0 rounded-bottom p-4">
+                            <p class="my-3">@Html.Raw(Model.ActivityDescription)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h1 class="text-white mb-3">
+                        Ticket Information
+                    </h1>
+                    <form method="post" enctype="multipart/form-data" asp-action="Create">
+                        <div class="row g-3">
+                            <div class="col-md-12">
+                                <div class="form-floating">
+                                    <input type="datetime" class="form-control bg-white border-0" value="@Model.ActivityName" readonly>
+                                    <label>Activity Name</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="datetime" class="form-control bg-white border-0" value="@Model.Artist.ArtistName" readonly>
+                                    <label>Artist Name</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="datetime" class="form-control bg-white border-0" value="@Model.ActivityDate.ToString("dd /MM /yyyy HH:mm")" readonly>
+                                    <label>Activity Date</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="number" class="form-control bg-white border-0" name="NumberPeople" id="NumberPeople" placeholder="Number People" required>
+                                    <label>Number People</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="datetime" class="form-control bg-white border-0" value=" @Model.ActivityPrice.ToString("C")" readonly>
+                                    <label>Activity Price</label>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <button class="btn btn-secondary text-white w-100 py-3" type="submit">Buy Tickets</button>
+                            </div>
+                            <div class="col-6">
+                                <a href="/Ticket/Index" class="btn btn-secondary text-white w-100 py-3">Cancel</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+else
+{
+    <div class="container-fluid bg-breadcrumb">
+        <div class="container text-center" style="max-width: 900px;">
+            <h1 class="text-white display-3 mb-4">
+                Event Not Found
+            </h1>
+        </div>
+    </div>
+}

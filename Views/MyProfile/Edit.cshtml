@@ -1,0 +1,87 @@
+﻿@model User
+
+<div class="container-fluid bg-breadcrumb">
+    <div class="container text-center" style="max-width: 900px;">
+        <h1 class="text-white display-3 mb-4">
+            My Profile
+        </h1>
+    </div>
+</div>
+<div class="container-fluid booking py-5">
+    <div class="container py-5">
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-6">
+                <h5 class="section-booking-title pe-3">About</h5>
+                <h1 class="text-white mb-4">Moon Cafe</h1>
+                <p class="text-white mb-4">
+                    **Welcome to Moon Cafe!**
+
+                    At Moon Cafe, we offer a delightful break in a warm atmosphere. Located in the heart of the city, our café provides a wide menu and an impressive ambiance that caters to people of all ages and tastes.
+                </p>
+                <p class="text-white mb-4">
+                    **A Pleasurable Environment and Events**
+
+                    Moon Cafe is not just a café; it's also the social hub of your city. Throughout the week, we organize events that appeal to various interests. From live music performances to poetry nights, art exhibitions, and book clubs, we create a cultural atmosphere. We also offer special programs like game nights for the youth and children's activities for families.
+                </p>
+            </div>
+            <div class="col-lg-6">
+                <h1 class="text-white mb-3">Edit Profile</h1>
+                <form method="post" enctype="multipart/form-data">
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <div class="form-floating">
+                                <input type="text" class="form-control bg-white border-0" asp-for="UserFullName" placeholder="Your Name">
+                                <span class="text-danger" asp-validation-for="UserFullName"></span>
+                                <label>Your Name</label>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-floating">
+                                <input type="email" class="form-control bg-white border-0" asp-for="UserEmail" placeholder="Your Email">
+                                <span class="text-danger" asp-validation-for="UserEmail"></span>
+                                <label>Your Email</label>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-floating">
+                                <input type="text" class="form-control bg-white border-0" asp-for="UserPassword" placeholder="Your Password">
+                                <span class="text-danger" asp-validation-for="UserPassword"></span>
+                                <label>Your Password</label>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-floating">
+                                <input type="text" class="form-control bg-white border-0" asp-for="Role" placeholder="Your Role" readonly>
+                                <label>Your Role</label>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-floating">
+                                <input type="date" class="form-control bg-white border-0" asp-for="CreatedDate" placeholder="Create Date" readonly>
+                                <span class="text-danger" asp-validation-for="CreatedDate"></span>
+                                <label>Create Date</label>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-floating">
+                                <input type="date" class="form-control bg-white border-0" asp-for="UpdateDate" placeholder="Update Date" readonly>
+                                <span class="text-danger" asp-validation-for="UpdateDate"></span>
+                                <label>Update Date</label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <label>Your Image</label>
+                            <input class="form-control mb-3" type="file" name="img" id="img" accept="image/*" />
+                        </div>
+                        <div class="col-6">
+                            <button class="btn btn-secondary text-white w-100 py-3" type="submit">Save</button>
+                        </div>
+                        <div class="col-6">
+                            <a href="/Home/Index" class="btn btn-secondary text-white w-100 py-3">Cancel</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

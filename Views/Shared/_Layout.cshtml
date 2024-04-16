@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <partial name="_Head" />
+    @RenderSection("CssSection", required: false)
+
+</head>
+
+<body>
+    <partial name="_Spinner" />
+    <partial name="_Topbar" />
+    <partial name="_Navbar" />
+
+    @RenderBody()
+
+    <partial name="_Subscribe" />
+    <partial name="_Footer" />
+    <partial name="_Copyright" />
+    <partial name="_BackToTop" />
+    <partial name="_Scripts" />
+    @RenderSection("ScriptSection", required: false)
+</body>
+
+</html>

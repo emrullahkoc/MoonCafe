@@ -1,0 +1,68 @@
+﻿@model MoonCafe.Models.ViewModels.LoginViewModel
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="~/style.css">
+    <link href="img/logo.png" rel="icon">
+    <title>Moon Cafe</title>
+</head>
+
+<body>
+
+
+    <div class="container" id="container">
+        @*  <div class="form-container sign-up">
+            <form method="post" enctype="multipart/form-data">
+                <h1>Create Account</h1>
+                <input type="text" placeholder="Name Surname" asp-for="UserFullName">
+                <input type="email" placeholder="Email" asp-for="UserEmail">
+                <input type="password" placeholder="Password" asp-for="UserPassword">
+                <input type="file" placeholder="Image" asp-for="UserImageUrl">
+                <button type="submit">Sign Up</button>
+                <a class="btn btn-warning"
+                   href="/Management/Activity/Edit">Edit</a>
+            </form>
+        </div>  *@
+
+
+        <div class="form-container sign-in">
+            <form method="post">
+                <h1>User Login</h1>
+                <input type="email" placeholder="Email" asp-for="UserEmail">
+                <span asp-validation-for="UserEmail"></span>
+                <input type="password" placeholder="Password" asp-for="UserPassword">
+                <span asp-validation-for="UserPassword"></span>
+                <span>@ViewBag.Message</span>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+
+
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>Welcome</h1>
+                    <p>If you are a member, you can login.</p>
+                    <button class="hidden" id="login">Login</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1>Welcome</h1>
+                    <p>Welcome to the Moon Cafe. If you are not a member, you can sign up from this section.</p>
+                    <button class="hidden" id="register">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="~/script.js"></script>
+</body>
+
+</html>

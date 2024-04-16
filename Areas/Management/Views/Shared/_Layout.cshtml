@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <partial name="_Head" />
+    @RenderSection("CssSection", required: false)
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="sidebar-wrapper" data-simplebar="true">
+            <partial name="_Sidebar" />
+            <partial name="_Navigation" />
+        </div>
+        <partial name="_Header" />
+        <div class="page-wrapper">
+            <div class="page-content-wrapper">
+                <div class="page-content">
+
+                    @RenderBody()
+
+                </div>
+            </div>
+            <partial name="_Mobile" />
+            <partial name="_Footer" />
+        </div>
+        <partial name="_Scripts" />
+        @RenderSection("ScriptSection", required: false)
+</body>
+
+</html>

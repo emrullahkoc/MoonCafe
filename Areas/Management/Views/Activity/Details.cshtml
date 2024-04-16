@@ -1,0 +1,52 @@
+﻿@model Activity
+
+<div class="user-profile-page">
+    <div class="card radius-15">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-12 col-lg-5 border-right">
+                    <div class="d-md-flex">
+                        <div class="mb-md-0 mb-3">
+                            <img src="@Model.ActivityImageUrl" class="rounded ml-3 shadow" width="200" height="300" style="object-fit: cover">
+                        </div>
+                        <div class="ms-md-4 flex-grow-1">
+                            <div class="d-flex align-items-center mb-3">
+                                <h2 class="mb-0">@Model.ActivityName</h2>
+                            </div>
+                            <a href="/Management/Activity/Edit/@Model.Id" type="button" class="btn btn-warning m-1 px-5">Edit</a>
+                            <a href="/Management/Activity/Index" type="button" class="btn btn-secondary m-1 px-5">Cancel</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 border-right text-end">
+                    <div class="d-md-flex align-items-center">
+                        <div class="ms-md-4 flex-grow-1">
+                            <div class="align-items-center mb-1">
+                                <h5 class="mb-0"><a href="/Management/Artist/Details/@Model.Artist?.Id">@Model.Artist?.ArtistName</a></h5>
+                                <h5 class="mb-0"><a href="/Management/Category/Details/@Model.Category?.Id">@Model.Category?.CategoryName</a></h5>
+                                <br />
+                                <h5 class="mb-2">Activity Date<br />@Model.ActivityDate.ToString("dd MMMM yyyy HH:mm") <br /><br />Price: @Model.ActivityPrice.ToString("C") </h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <table class="table table-sm table-borderless mt-md-0 mt-3">
+                        <tbody>
+                            <tr>
+                                <th>Eklenme Tarihi:<br />@Model.CreateDate.ToString("dd MMMM yyyy")</th>
+                            </tr>
+                            <tr>
+                                <th>Güncellenme Tarihi:<br />@Model.UpdateDate.ToString("dd MMMM yyyy")</th>
+                            </tr>
+                            <tr>
+                                <th>Description:</th>
+                            </tr>
+                            <tr><td>@Html.Raw(Model.ActivityDescription)</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,23 @@
+﻿@model About
+<div class="container-fluid bg-breadcrumb">
+    <div class="container text-center" style="max-width: 900px;">
+        <h1 class="text-white display-3 mb-4">
+            About Us</h1>
+    </div>
+</div>
+<div class="container-fluid about">
+    <div class="container py-5">
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-5">
+                <div class="h-100" style="border: 50px solid; border-color: transparent #1c1c1c transparent #363636;">
+                    <img src="@Model.AboutImageUrl" class="img-fluid w-100 h-100" alt="">
+                </div>
+            </div>
+            <div class="col-lg-7" style="background: linear-gradient(rgba(255, 255, 255, .8), rgba(255, 255, 255, .8)), url(img/about-img-1.png);">
+                <h1 class="mb-4">@Model.AboutTitle</h1>
+                <p class="mb-4">@Html.Raw(Model.AboutDetails)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

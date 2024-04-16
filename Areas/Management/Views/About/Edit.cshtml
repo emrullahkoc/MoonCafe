@@ -1,0 +1,50 @@
+﻿@model About
+
+<h6 class="mb-0 text-uppercase">Edit About</h6>
+<hr />
+<div class="card">
+    <div class="card-body">
+        <div class="p-4 border rounded">
+            <form class="row g-3 needs-validation" method="post" enctype="multipart/form-data">
+                <div class="col-md-12">
+                    <label class="form-label">About Title</label>
+                    <input type="text" class="form-control" asp-for="AboutTitle">
+                    <span class="text-danger" asp-validation-for="AboutTitle"></span>
+                </div>
+                <div class="col-md-12">
+                    <label class="form-label">Description</label>
+                    <textarea class="ckeditor" type="text" asp-for="AboutDetails" rows="4"></textarea>
+                    <span class="text-danger" asp-validation-for="AboutDetails"></span>
+                </div>
+                <div class="col-md-12">
+                    <label class="form-label">Map Location</label>
+                    <input type="text" class="form-control" asp-for="AboutMapLocation">
+                    <span class="text-danger" asp-validation-for="AboutMapLocation"></span>
+                </div>
+                <div class="col-md-12">
+                    <label class="form-label">Address</label>
+                    <input type="text" class="form-control" asp-for="Address">
+                    <span class="text-danger" asp-validation-for="Address"></span>
+                </div>
+                <div class="col-md-12">
+                    <label class="form-label">Address</label>
+                    <input type="email" class="form-control" asp-for="Mail">
+                    <span class="text-danger" asp-validation-for="Mail"></span>
+                </div>
+                <div class="col-md-12">
+                    <label class="form-label">Telephone</label>
+                    <input type="text" class="form-control" asp-for="Telephone">
+                    <span class="text-danger" asp-validation-for="Telephone"></span>
+                </div>
+                <div class="col-12">
+                    <label class="form-label">About Image</label>
+                    <input class="form-control mb-3" type="file" name="img" id="img" accept="image/*" />
+                </div>
+                <div class="col-12">
+                    <button class="btn btn-success m-1 px-5" type="submit">Save</button>
+                    <a href="/Management/Home/Index" class="btn btn-secondary m-1 px-5">Cancel</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,35 @@
+﻿@model Artist
+
+<h6 class="mb-0 text-uppercase">@Model.ArtistName EDİT</h6>
+<hr />
+<div class="card">
+    <div class="card-body">
+        <div class="p-4 border rounded">
+            <form class="row g-3 needs-validation" method="post" enctype="multipart/form-data">
+                <div class="col-md-4">
+                    <label class="form-label">Artist Name Surname</label>
+                    <input type="text" class="form-control" asp-for="ArtistName" placeholder="Artist Name Surname">
+                    <span class="text-danger" asp-validation-for="ArtistName"></span>
+                </div>
+                <div class="col-md-4">
+                    <label class="form-label">Artist Birth Date</label>
+                    <input type="date" class="form-control" asp-for="ArtistBirthDate">
+                    <span class="text-danger" asp-validation-for="ArtistBirthDate"></span>
+                </div>
+                <div class="col-md-12">
+                    <label class="form-label">Artist About</label>
+                    <textarea class="ckeditor" type="text" placeholder="Artist About" asp-for="ArtistDescription" rows="4"></textarea>
+                    <span class="text-danger" asp-validation-for="ArtistDescription"></span>
+                </div>
+                <div class="col-12">
+                    <label class="form-label">Artist Image</label>
+                    <input class="form-control mb-3" type="file" name="img" id="img" accept="image/*" />
+                </div>
+                <div class="col-12">
+                    <button class="btn btn-success m-1 px-5" type="submit">Save</button>
+                    <a href="/Management/Artist/Details/@Model.Id" class="btn btn-secondary m-1 px-5">Cancel</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,104 @@
+﻿@model Category
+
+<div class="user-profile-page">
+    <div class="card radius-15">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-12 col-lg-5 border-right">
+                    <div class="d-md-flex">
+                        <div class="mb-md-0 mb-3">
+                            <img src="@Model.CategoryImageUrl" class="rounded ml-3 shadow" width="200" height="300" style="object-fit: cover">
+                        </div>
+                        <div class="ms-md-4 flex-grow-1">
+                            <div class="d-flex align-items-center mb-3">
+                                <h4 class="mb-0">@Model.CategoryName</h4>
+                            </div>
+                            <a href="/Management/Category/Edit/@Model.Id" type="button" class="btn btn-warning m-1 px-5">Edit</a>
+                            <a href="/Management/Category/Index" type="button" class="btn btn-secondary m-1 px-5">Cancel</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 border-right text-end">
+                </div>
+                <div class="col-12 col-lg-4">
+                    <table class="table table-sm table-borderless mt-md-0 mt-3">
+                        <tbody>
+                            <tr>
+                                <th>About:</th>
+                            </tr>
+                            <tr>
+                                <td>@Html.Raw(Model.CategoryDescription)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<h6 class="mb-0 text-uppercase">Activities</h6>
+<hr />
+<div class="row">
+    @{
+        int rowNumber = 1;
+    }
+    @foreach (var item in Model.Activities)
+    {
+        if (rowNumber == 1)
+        {
+            <div class="col-12 col-lg-6 col-xl-6">
+                <div class="card">
+                    <div class="row no-gutters">
+                        <div class="col-md-4 d-flex">
+                            <img src="@item.ActivityImageUrl" width="250">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">@item.ActivityName</h5>
+                                <p class="card-text">@Html.Raw(@item.ActivityDescription)</p>
+                                <p class="card-text">
+                                    <a class="text-muted" href="/Management/Artist/Details/@item.Artist.Id">@item.Artist.ArtistName</a>
+                                    <br />
+                                    <small class="text-muted">Activity Date <br />@item.ActivityDate.ToString("dd MMMM yyyy HH:mm")</small>
+                                    <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                                        <a href="/Management/Activity/Edit/@item.Id" type="button" class="btn btn-warning">Edit</a>
+                                        <a href="/Management/Activity/Details/@item.Id" type="button" class="btn btn-success">Details</a>
+                                    </div>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            rowNumber = 0;
+        }
+        else
+        {
+            <div class="col-12 col-lg-6 col-xl-6">
+                <div class="card">
+                    <div class="row no-gutters">
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">@item.ActivityName</h5>
+                                <p class="card-text">@Html.Raw(@item.ActivityDescription)</p>
+                                <p class="card-text">
+                                    <a class="text-muted" href="/Management/Artist/Details/@item.Artist.Id">@item.Artist.ArtistName</a>
+                                    <br />
+                                    <small class="text-muted">Activity Date <br />@item.ActivityDate.ToString("dd MMMM yyyy HH:mm")</small>
+                                    <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                                        <a href="/Management/Activity/Edit/@item.Id" type="button" class="btn btn-warning">Edit</a>
+                                        <a href="/Management/Activity/Details/@item.Id" type="button" class="btn btn-success">Details</a>
+                                    </div>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 d-flex">
+                            <img src="@item.ActivityImageUrl" width="250">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            rowNumber = 1;
+        }
+    }
+</div>

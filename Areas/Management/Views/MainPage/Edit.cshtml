@@ -1,0 +1,32 @@
+﻿@model MainPage
+
+<h6 class="mb-0 text-uppercase">Edit Main Pages</h6>
+<hr />
+<div class="card">
+    <div class="card-body">
+        <div class="p-4 border rounded">
+            <form class="row g-3 needs-validation" method="post" enctype="multipart/form-data">
+                <div class="col-md-12">
+                    <label class="form-label">Title</label>
+                    <input type="text" class="form-control" asp-for="Title">
+                    <span class="text-danger" asp-validation-for="Title"></span>
+                </div>
+
+                <div class="col-md-12">
+                    <label class="form-label">Title 2</label>
+                    <input type="text" class="form-control" asp-for="TitleT">
+                    <span class="text-danger" asp-validation-for="TitleT"></span>
+                </div>
+                <div class="col-md-12">
+                    <label class="form-label">Description</label>
+                    <textarea class="ckeditor" type="text" asp-for="MainPageDescription" rows="4"></textarea>
+                    <span class="text-danger" asp-validation-for="MainPageDescription"></span>
+                </div>
+                <div class="col-12">
+                    <button class="btn btn-success m-1 px-5" type="submit">Save</button>
+                    <a href="/Management/Home/Index" class="btn btn-secondary m-1 px-5">Cancel</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

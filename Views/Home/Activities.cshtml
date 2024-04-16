@@ -1,0 +1,85 @@
+﻿@model List<Activity>
+
+<div class="container-fluid bg-breadcrumb">
+    <div class="container text-center" style="max-width: 900px;">
+        <h1 class="text-white display-3 mb-4">
+            Activities
+        </h1>
+    </div>
+</div>
+<div class="container-fluid destination">
+    <div class="container py-5">
+        <div class="mx-auto text-center mb-5" style="max-width: 900px;">
+            <h1 class="mb-0">Popular Activities</h1>
+        </div>
+        <div class="tab-class">
+            <div class="tab-content">
+                <div id="tab-1" class="tab-pane fade show p-0 active">
+                    <div class="row g-4">
+                        @{
+                            int rowNumber = 1;
+                        }
+                        @foreach (var item in Model)
+                        {
+                            if (rowNumber == 1)
+                            {
+                                <div class="col-xl-8">
+                                    <div class="row g-4">
+                                        <a href="/Ticket/Create/@item.Id">
+                                            <h1>@item.Artist.ArtistName | @item.ActivityName</h1>
+                                            <h4 class="mb-1 mt-1">@item.ActivityDate.ToString("dd MMMM yyyy | HH:mm")</h4>
+                                            <p class="mb-1 mt-1">@Html.Raw(item.ActivityDescription)</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="destination-img">
+                                        <a href="/Ticket/Create/@item.Id">
+                                            <img class="img-fluid rounded w-100" src="@item.ActivityImageUrl">
+                                            <div class="destination-overlay p-4 bg-light">
+                                                <h4 class="text-black mb-1 mt-1">@item.ActivityName</h4>
+                                                <h5 class="text-black mb-1 mt-1">@item.Artist.ArtistName</h5>
+                                                <h5 class="text-black mb-1 mt-1">@item.ActivityDate.ToString("HH:mm") || @item.ActivityPrice.ToString("C")</h5>
+                                                <a href="/Ticket/Create/@item.Id" class="btn-hover text-black">
+                                                    Buy a ticket<i class="fa fa-arrow-right ms-2"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <hr />
+                                rowNumber = 0;
+                            }
+                            else
+                            {
+                                <div class="col-lg-4">
+                                    <div class="destination-img">
+                                        <a href="/Ticket/Create/@item.Id">
+                                            <img class="img-fluid rounded w-100" src="@item.ActivityImageUrl">
+                                            <div class="destination-overlay p-4 bg-light">
+                                                <h4 class="text-black mb-1 mt-1">@item.ActivityName</h4>
+                                                <h5 class="text-black mb-1 mt-1">@item.Artist.ArtistName</h5>
+                                                <h5 class="text-black mb-1 mt-1">@item.ActivityDate.ToString("HH:mm") || @item.ActivityPrice.ToString("C")</h5>
+                                                <a href="/Ticket/Create/@item.Id" class="btn-hover text-black">Buy a ticket<i class="fa fa-arrow-right ms-2"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-xl-8">
+                                    <div class="row g-4">
+                                        <a href="/Ticket/Create/@item.Id">
+                                            <h1>@item.Artist.ArtistName | @item.ActivityName</h1>
+                                            <h4 class="mb-1 mt-1">@item.ActivityDate.ToString("dd MMMM yyyy | HH:mm")</h4>
+                                            <p class="mb-1 mt-1">@Html.Raw(item.ActivityDescription)</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <hr />
+                                rowNumber = 1;
+                            }
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

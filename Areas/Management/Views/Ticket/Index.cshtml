@@ -1,0 +1,141 @@
+﻿@model List<Ticket>
+
+@section CssSection {
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
+}
+
+<div class="card radius-15">
+    <div class="card-body">
+        <div class="row">
+            <div class="col-9 row">
+                <div class="card-title">
+                    <h4>Tickets</h4>
+                </div>
+            </div>
+        </div>
+        <hr />
+        <div class="table-responsive">
+            <table class="table mb-0" id="dataTable">
+                <thead>
+                    <tr>
+                        <th scope="col" class="text-center"></th>
+                        <th scope="col" class="text-center">User</th>
+                        <th scope="col" class="text-center">Use Namer</th>
+                        <th scope="col" class="text-center">Activity Name</th>
+                        <th scope="col" class="text-center">Category</th>
+                        <th scope="col" class="text-center">Artist</th>
+                        <th scope="col" class="text-center">Activity Date</th>
+                        <th scope="col" class="text-center">Create Date</th>
+                        <th scope="col" class="text-center">Payment</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @for (int i = 1; i <= Model.Count(); i++)
+                    {
+                        <tr>
+                            <th scope="row" class="text-center">@i</th>
+                            <td class="text-center"><img class="rounded ml-3 shadow" src="@Model[i - 1].User.UserImageUrl" width="90" height="90" style="object-fit: cover" /></td>
+                            <td>@Model[i - 1].User.UserFullName</td>
+                            <td>@Model[i - 1].Activity.ActivityName</td>
+                            <td class="text-center">@Model[i - 1].Activity.Category?.CategoryName</td>
+                            <td class="text-center">@Model[i - 1].Activity.Artist?.ArtistName</td>
+                            <td class="text-center">@Model[i - 1].Activity.ActivityDate.ToString("dd MMMM HH:mm")</td>
+                            <td class="text-center">@Model[i - 1].CreateDate.ToString("dd MMMM yyyy")</td>
+                            <td class="text-center">
+                                @if (@Model[i - 1].TicketStatus == true)
+                                {
+                                    <span class="badge" style="background-color: green; color: white;">Complete</span>
+                                }
+                                else
+                                {
+                                    <span class="badge" style="background-color: red; color: white;">Not Completed</span>
+                                }
+                            </td>
+                            <td class ="text-end">
+                                @if (@Model[i - 1].TicketStatus == true)
+                                {
+                                    <button class="btn btn-danger" onclick="DeactivateByJs(@Model[i - 1].Id);">Deactivate</button>
+                                }
+                                else
+                                {
+                                    <button class="btn btn-success" onclick="ActivateByJs(@Model[i - 1].Id);">Activate</button>
+                                }
+                                <a class="btn btn-primary"
+                                   href="/Management/Activity/Details/@Model[i - 1].Id">Details</a>
+                                <a class="btn btn-warning"
+                                   href="/Management/Activity/Edit/@Model[i - 1].Id">Edit</a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+@section ScriptSection {
+    <script>
+        function DeactivateByJs(Id) {
+            var result = confirm("Are you sure you want to Deactivate?");
+            if (result) {
+                $.ajax({
+                    type: "POST",
+                    url: "/Management/Ticket/DeactivateByJs",
+                    data: { Id: Id },
+                    success: function (data) {
+                        alert(data);
+                        location.reload();
+                        window.location.href = '/Management/Ticket/Index';
+                    },
+                    error: function (data) {
+                        alert("Error: " + data);
+                    }
+                });
+            } else {
+
+            }
+        }
+
+        function ActivateByJs(Id) {
+            var result = confirm("Are you sure you want to Activate?");
+            if (result) {
+                $.ajax({
+                    type: "POST",
+                    url: "/Management/Ticket/ActivateByJs",
+                    data: { Id: Id },
+                    success: function (data) {
+                        alert(data);
+                        location.reload();
+                        window.location.href = '/Management/Ticket/Index';
+                    },
+                    error: function (data) {
+                        alert("Error: " + data);
+                    }
+                });
+            } else {
+
+            }
+        }
+    </script>
+    <script>
+        $(document).ready(function () {
+            var table = $('#dataTable').DataTable({
+                "pageLength": 10,
+                "order": [[2, 'asc']],
+                "lengthMenu": [[5, 10, 20, 50], [5, 10, 20, 50, "All"]],
+                "drawCallback": function (settings) {
+                    var api = this.api();
+                    var startIndex = api.context[0]._iDisplayStart;
+                    api.column(0, { order: 'applied' }).nodes().each(function (cell, i) {
+                        cell.innerHTML = startIndex + i + 1;
+                    });
+                }
+            });
+        });
+    </script>
+
+    <script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
+}

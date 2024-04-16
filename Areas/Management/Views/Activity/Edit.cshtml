@@ -1,0 +1,46 @@
+﻿@model Activity
+
+<h6 class="mb-0 text-uppercase">@Model.ActivityName EDİT</h6>
+<hr />
+<div class="card">
+    <div class="card-body">
+        <div class="p-4 border rounded">
+            <form class="row g-3 needs-validation" method="post" enctype="multipart/form-data">
+                <div class="col-md-4">
+                    <label class="form-label">Activity Name</label>
+                    <input type="text" class="form-control" asp-for="ActivityName" placeholder="Activity Name">
+                    <span class="text-danger" asp-validation-for="ActivityName"></span>
+                </div>
+                <div class="col-md-4">
+                    <label class="form-label">Artist</label>
+                    <select class="form-select" asp-for="ArtistId" asp-items="@ViewBag.ArtistId"></select>
+                </div>
+                <div class="col-md-4">
+                    <label class="form-label">Category</label>
+                    <select class="form-select" asp-for="CategoryId" asp-items="@ViewBag.CategoryId"></select>
+                </div>
+                <span>Activity Date</span>
+                <div class="input-group mb-3">
+                    <input type="datetime-local" class="form-control" asp-for="ActivityDate">
+                    <span class="text-danger" asp-validation-for="ActivityDate"></span>
+                    <span class="input-group-text">/</span>
+                    <input type="number" class="form-control" placeholder="Activity Price" asp-for="ActivityPrice">
+                    <span class="text-danger" asp-validation-for="ActivityPrice"></span>
+                </div>
+                <div class="col-md-12">
+                    <label class="form-label">Description</label>
+                    <textarea class="ckeditor" type="text" placeholder="Activity Description" asp-for="ActivityDescription" rows="4"></textarea>
+                    <span class="text-danger" asp-validation-for="ActivityDescription"></span>
+                </div>
+                <div class="col-12">
+                    <label class="form-label">Activity Image</label>
+                    <input class="form-control mb-3" type="file" name="img" id="img" accept="image/*" />
+                </div>
+                <div class="col-12">
+                    <button class="btn btn-success m-1 px-5" type="submit">Save</button>
+                    <a href="/Management/Activity/Details/@Model.Id" class="btn btn-secondary m-1 px-5">Cancel</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

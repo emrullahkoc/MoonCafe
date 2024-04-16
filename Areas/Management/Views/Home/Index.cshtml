@@ -1,0 +1,168 @@
+﻿@section CssSection {
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
+}
+
+<div class="row">
+    <a href="/Management/Artist/Index/" class="col-12 col-lg-4">
+        <div class="card radius-15 bg-voilet">
+            <div class="card-body">
+                <div class="d-flex align-items-center">
+                    <div>
+                        <h2 class="mb-0 text-white">@Model.ArtistCount </h2>
+                    </div>
+                    <div class="ms-auto font-35 text-white">
+                        <i class="lni lni-write"></i>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center">
+                    <div>
+                        <p class="mb-0 text-white">Artist Count</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+    <a href="/Management/Category/Index/" class="col-12 col-lg-4">
+        <div class="card radius-15 bg-primary-blue">
+            <div class="card-body">
+                <div class="d-flex align-items-center">
+                    <div>
+                        <h2 class="mb-0 text-white">@Model.CategoryCount </h2>
+                    </div>
+                    <div class="ms-auto font-35 text-white">
+                        <i class="lni lni-write"></i>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center">
+                    <div>
+                        <p class="mb-0 text-white">Category Count</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+    <a href="/Management/Activity/Index/" class="col-12 col-lg-4">
+        <div class="card radius-15 bg-rose">
+            <div class="card-body">
+                <div class="d-flex align-items-center">
+                    <div>
+                        <h2 class="mb-0 text-white">@Model.ActivityCount</h2>
+                    </div>
+                    <div class="ms-auto font-35 text-white">
+                        <i class="lni lni-book"></i>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center">
+                    <div>
+                        <p class="mb-0 text-white">
+                            Number of Pending Events
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</div>
+
+<div class="card radius-15">
+    <div class="card-body">
+        <div class="row">
+            <div class="col-9 row">
+                <div class="card-title">
+                    <h4>Upcoming Events</h4>
+                </div>
+            </div>
+            <div class="col-3 text-end">
+                <a href="/Management/Activity/Create" class="btn btn-success m-1 px-5">New Activity Add</a>
+            </div>
+        </div>
+        <hr />
+        <div class="table-responsive">
+            <table class="table mb-0" id="dataTable">
+                <thead>
+                    <tr>
+                        <th scope="col"></th>
+                        <th scope="col">Activity</th>
+                        <th scope="col">Activity Name</th>
+                        <th scope="col">Category</th>
+                        <th scope="col">Artist</th>
+                        <th scope="col">Activity Date</th>
+                        <th scope="col">Activity Price</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @{
+                        int rowNumber = 1;
+                    }
+                    @foreach (var item in Model.Activities)
+                    {
+                        <tr>
+                            <th scope="row">@rowNumber</th>
+                            <td><img class="rounded ml-3 shadow" src="@item.ActivityImageUrl" width="90" height="90" style="object-fit: cover" /></td>
+                            <td>@item.ActivityName</td>
+                            <td>@item.Category?.CategoryName</td>
+                            <td>@item.Artist?.ArtistName</td>
+                            <td>@item.ActivityDate.ToString("dd MMMM HH:mm")</td>
+                            <td>@item.ActivityPrice.ToString("C")</td>
+                            <td class="text-end">
+                                <a class="btn btn-primary"
+                                   href="/Management/Activity/Details/@item.Id">Details</a>
+
+                                <a class="btn btn-warning"
+                                   href="/Management/Activity/Edit/@item.Id">Edit</a>
+
+                                <button class="btn btn-danger" onclick="deleteActivity(@item.Id);">Delete</button>
+                            </td>
+                        </tr>
+                        rowNumber++;
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+@section ScriptSection {
+    <script>
+        function deleteActivity(Id) {
+            var result = confirm("Are you sure you want to delete?");
+            if (result) {
+                $.ajax({
+                    type: "POST",
+                    url: "/Management/Activity/DeleteByJs",
+                    data: { Id: Id },
+                    success: function (data) {
+                        alert(data);
+                        location.reload();
+                        window.location.href = '/Management/Home/Index';
+                    },
+                    error: function (data) {
+                        alert("Error: " + data);
+                    }
+                });
+            } else {
+
+            }
+        }
+    </script>
+    <script>
+        $(document).ready(function () {
+            var table = $('#dataTable').DataTable({
+                "pageLength": 10,
+                "order": [[2, 'asc']],
+                "lengthMenu": [[5, 10, 20, 50], [5, 10, 20, 50, "All"]],
+                "drawCallback": function (settings) {
+                    var api = this.api();
+                    var startIndex = api.context[0]._iDisplayStart;
+                    api.column(0, { order: 'applied' }).nodes().each(function (cell, i) {
+                        cell.innerHTML = startIndex + i + 1;
+                    });
+                }
+            });
+        });
+    </script>
+
+    <script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
+}

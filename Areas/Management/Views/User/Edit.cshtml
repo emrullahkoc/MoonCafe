@@ -1,0 +1,55 @@
+﻿@model User
+
+<h6 class="mb-0 text-uppercase">@Model.UserFullName</h6>
+<br />
+@if (Model.UserStatus == true)
+{
+    <h6><span class="badge" style="background-color: green; color: white;">Status Active </span> &nbsp <i class="lni lni-checkmark" style="color: green;"></i></h6>
+}
+else
+{
+    <h6><span class="badge" style="background-color: red; color: white;">Status Passive</span> &nbsp <i class="lni lni-close" style="color: red;"></i></h6>
+}
+<hr />
+<div class="card">
+    <div class="card-body">
+        <div class="p-4 border rounded d-flex">
+            <div class="form-group flex-shrink-0" style="margin-right: 20px;">
+                <img src="@Model.UserImageUrl" class="rounded shadow" width="200" height="250" style="object-fit: cover">
+            </div>
+            <form class="row g-3 needs-validation ml-3 w-100" method="post">
+                <div class="col-md-4">
+                    <label class="form-label">User Name</label>
+                    <input type="text" class="form-control" asp-for="UserFullName">
+                </div>
+                <div class="col-md-4">
+                    <label class="form-label">User Password</label>
+                    <input type="text" class="form-control" asp-for="UserPassword" readonly>
+                </div>
+                <div class="col-md-4">
+                    <label class="form-label">User Mail</label>
+                    <input type="email" class="form-control" asp-for="UserEmail" readonly>
+                </div>
+                <div class="col-md-4">
+                    <label class="form-label">Role</label>
+                    <select class="form-control" asp-for="Role" placeholder="User Role">
+                        <option value="Admin">Admin</option>
+                        <option value="Customer">Customer</option>
+                    </select>
+                </div>
+                <div class="col-md-4">
+                    <label class="form-label">Create Date</label>
+                    <input type="date" class="form-control" asp-for="CreatedDate" readonly>
+                </div>
+                <div class="col-md-4">
+                    <label class="form-label">Update Date</label>
+                    <input type="date" class="form-control" asp-for="UpdateDate" readonly>
+                </div>
+                <div class="col-12">
+                    <button class="btn btn-success m-1 px-5" type="submit">Save</button>
+                    <a href="/Management/User/Index" class="btn btn-secondary m-1 px-5">Cancel</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

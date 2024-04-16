@@ -1,0 +1,86 @@
+﻿@model Activity
+
+<div class="container-fluid bg-breadcrumb">
+    <div class="container text-center" style="max-width: 900px;">
+        <h1 class="text-white display-3 mb-4">
+            @Model.ActivityName
+        </h1>
+    </div>
+</div>
+@if (Model.ActivityDate >= DateTime.Now)
+{
+    <div class="container-fluid destination">
+        <div class="container py-5">
+            <div class="tab-class">
+                <div class="tab-content">
+                    <div id="tab-1" class="tab-pane fade show p-0 active">
+                        <div class="row g-4">
+                            <div class="col-xl-8">
+                                <div class="row g-4">
+                                    <a href="/Ticket/Create/@Model.Id">
+                                        <h1>@Model.Artist.ArtistName | @Model.ActivityName</h1>
+                                        <h4 class="mb-1 mt-1">@Model.ActivityDate.ToString("dd MMMM yyyy | HH:mm")</h4>
+                                        <p class="mb-1 mt-1">@Html.Raw(Model.ActivityDescription)</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="destination-img">
+                                    <a href="/Ticket/Create/@Model.Id">
+                                        <img class="img-fluid rounded w-100" src="@Model.ActivityImageUrl">
+                                        <div class="destination-overlay p-4 bg-light">
+                                            <h4 class="text-black mb-1 mt-1">@Model.ActivityName</h4>
+                                            <h5 class="text-black mb-1 mt-1">@Model.Artist.ArtistName</h5>
+                                            <h5 class="text-black mb-1 mt-1">@Model.ActivityDate.ToString("HH:mm") || @Model.ActivityPrice.ToString("C")</h5>
+                                            <a href="/Ticket/Create/@Model.Id" class="btn-hover text-black">
+                                                Buy a ticket<i class="fa fa-arrow-right ms-2"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <hr />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+else
+{
+    <div class="container-fluid destination">
+        <div class="container py-5">
+            <div class="tab-class">
+                <div class="tab-content">
+                    <div id="tab-1" class="tab-pane fade show p-0 active">
+                        <div class="row g-4">
+                            <div class="col-xl-8">
+                                <div class="row g-4">
+                                    <a>
+                                        <h1>@Model.Artist.ArtistName | @Model.ActivityName</h1>
+                                        <h4 class="mb-1 mt-1">@Model.ActivityDate.ToString("dd MMMM yyyy | HH:mm")</h4>
+                                        <p class="mb-1 mt-1">@Html.Raw(Model.ActivityDescription)</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="destination-img">
+                                    <a>
+                                        <img class="img-fluid rounded w-100" src="@Model.ActivityImageUrl">
+                                        <div class="destination-overlay p-4 bg-light">
+                                            <h4 class="text-black mb-1 mt-1">@Model.ActivityName</h4>
+                                            <h5 class="text-black mb-1 mt-1">@Model.Artist.ArtistName</h5>
+                                            <h5 class="text-black mb-1 mt-1">@Model.ActivityDate.ToString("HH:mm")</h5>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <hr />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+

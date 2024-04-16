@@ -1,0 +1,70 @@
+﻿@using System.Security.Claims
+
+<!-- Topbar Start -->
+<div class="container-fluid bg-dark px-5 d-none d-lg-block">
+    <div class="row gx-0">
+        <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
+            <div class="d-inline-flex align-items-center" style="height: 45px;">
+                <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="https://x.com/gncbkk/" target="_blank"><i class="fab fa-twitter fw-normal"></i></a>
+                <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="https://www.facebook.com/emrullahkoccc/" target="_blank"><i class="fab fa-facebook-f fw-normal"></i></a>
+                <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="https://www.instagram.com/gncbk/" target="_blank"><i class="fab fa-instagram fw-normal"></i></a>
+                <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle" href="https://github.com/emrullahkoc/" target="_blank"><i class="fab fa-github fw-normal"></i></a>
+            </div>
+        </div>
+        <div class="col-lg-4 text-center text-lg-end">
+            @if (User != null && User.Claims != null &&
+            User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Name) != null &&
+            User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Name).Value != null &&
+            User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Role) != null &&
+            User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Role).Value == "Admin")
+            {
+                <div class="d-inline-flex align-items-center" style="height: 45px;">
+                    <a asp-area="Home" asp-controller="Account" asp-action="Logout"><small class="me-3 text-light"><i class="fas fa-power-off me-2"></i>Logout</small></a>
+                    <div class="dropdown">
+                        <a href="#" class="dropdown-toggle text-light" data-bs-toggle="dropdown">
+                            <small>
+                                <i class="fa fa-home me-2"></i>
+                            </small>
+                        </a>
+                        <div class="dropdown-menu rounded">
+                            <a href="/Management/Setting/Edit/@User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.NameIdentifier).Value" class="dropdown-item"><i class="fas fa-user-alt me-2"></i> My Profile</a>
+                            <a href="/Management/Home/Index" class="dropdown-item"><i class="fas fa-layer-group me-2"></i>Dashboard</a>
+                            <a href="#" class="dropdown-item"><i class="fas fa-star me-2"></i> Ticket</a>
+                        </div>
+                    </div>
+                </div>
+            }
+            else
+            {
+                @if (User != null && User.Claims != null &&
+               User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Name) != null &&
+               User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Name).Value != null &&
+               User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Role) != null &&
+               User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Role).Value == "Customer")
+                {
+                    <div class="d-inline-flex align-items-center" style="height: 45px;">
+                        <a asp-area="Home" asp-controller="Account" asp-action="Logout"><small class="me-3 text-light"><i class="fas fa-power-off me-2"></i>Logout</small></a>
+                        <div class="dropdown">
+                            <a href="#" class="dropdown-toggle text-light" data-bs-toggle="dropdown">
+                                <small>
+                                    <i class="fa fa-home me-2"></i>
+                                </small>
+                            </a>
+                            <div class="dropdown-menu rounded">
+                                <a href="/MyProfile/Edit/@User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.NameIdentifier).Value" class="dropdown-item"><i class="fas fa-user-alt me-2"></i> My Profile</a>
+                                <a href="#" class="dropdown-item"><i class="fas fa-star me-2"></i> Ticket</a>
+                            </div>
+                        </div>
+                    </div>
+                }
+                else
+                {
+                    <div class="d-inline-flex align-items-center" style="height: 45px;">
+                        <a asp-area="Home" asp-controller="Account" asp-action="Login"><small class="me-3 text-light"><i class="fa fa-sign-in-alt me-2"></i>Login</small></a>
+                    </div>
+                }
+            }
+        </div>
+    </div>
+</div>
+<!-- Topbar End -->

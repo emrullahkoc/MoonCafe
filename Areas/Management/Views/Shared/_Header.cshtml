@@ -1,0 +1,34 @@
+﻿@using System.Security.Claims
+
+<header class="top-header">
+    <nav class="navbar navbar-expand">
+        <div class="left-topbar d-flex align-items-center">
+            <a href="javascript:;" class="toggle-btn">
+                <i class="bx bx-menu"></i>
+            </a>
+        </div>
+        <div class="right-topbar ms-auto">
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown dropdown-user-profile">
+                    <a class="nav-link dropdown-toggle dropdown-toggle-nocaret" data-bs-toggle="dropdown">
+                        <div class="d-flex user-box align-items-center">
+                            <div class="user-info">
+                                <p class="user-name mb-0">@User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Name).Value</p>
+                                <p class="designattion mb-0">@User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Role).Value</p>
+                            </div>
+                            <img src="@User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Actor).Value" class="user-img">
+                        </div>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-end">
+                        <a class="dropdown-item" href="/Management/Setting/Edit/@User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.NameIdentifier).Value">
+                            <i class="bx bx-cog"></i><span>Setting</span>
+                        </a>
+                        <div class="dropdown-divider mb-0"></div>	<a class="dropdown-item" asp-area="Home" asp-controller="Account" asp-action="Logout">
+                            <i class="bx bx-power-off"></i><span>Logout</span>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>

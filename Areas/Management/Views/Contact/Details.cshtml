@@ -1,0 +1,112 @@
+﻿@model Contact
+
+<h5 class="mb-0 text-uppercase">@Model.ContactFullName</h5>
+<br />
+@if (Model.ContactStatus == true)
+{
+    <h5><span class="badge" style="background-color: green; color: white;">Status Active </span> &nbsp <i class="lni lni-checkmark" style="color: green;"></i></h5>
+}
+else
+{
+    <h5><span class="badge" style="background-color: red; color: white;">Status Passive</span> &nbsp <i class="lni lni-close" style="color: red;"></i></h5>
+}
+<hr />
+<div class="user-profile-page">
+    <div class="card radius-15">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-12 col-lg-5 border-right">
+                    <div class="d-md-flex">
+                        <div class="mb-md-0 mb-3">
+                            <img src="@Model.ContactImageUrl" class="rounded ml-3 shadow" width="200" height="300" style="object-fit: cover">
+                        </div>
+                        <div class="ms-md-4 flex-grow-1">
+                            <div class="d-flex align-items-center mb-1">
+                                <h4 class="mb-0">@Model.ContactFullName</h4>
+                            </div><br/>
+                            <div class="d-flex align-items-center mb-5">
+                                <h5 class="mb-0">@Model.ContactMail</h5>
+                            </div>
+                            @if (@Model.ContactStatus == true)
+                            {
+                                <button class="btn btn-danger" onclick="DeactivateByJs(@Model.Id);">Deactivate</button>
+                            }
+                            else
+                            {
+                                <button class="btn btn-success" onclick="ActivateByJs(@Model.Id);">Activate</button>
+                            }
+                            <a href="/Management/Contact/Index" type="button" class="btn btn-secondary m-1 px-5">Cancel</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 border-right text-end">
+                    <div class="d-md-flex align-items-center">
+                        <div class="ms-md-4 flex-grow-1">
+                            <div class="d-flex align-items-center mb-1">
+                                <p class="mb-0 ms-auto text-end">Message Send Date: @Model.ContactDate.ToString("dd MMMM yyyy")</p><br />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <table class="table table-sm table-borderless mt-md-0 mt-3">
+                        <tbody>
+                            <tr>
+                                <th>Message:</th>
+                            </tr>
+                            <tr>
+                                <td>@Model.ContactMessage</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section ScriptSection {
+    <script>
+        function DeactivateByJs(Id) {
+            var result = confirm("Are you sure you want to Deactivate?");
+            if (result) {
+                $.ajax({
+                    type: "POST",
+                    url: "/Management/Contact/DeactivateByJs",
+                    data: { Id: Id },
+                    success: function (data) {
+                        alert(data);
+                        location.reload();
+                        window.location.href = '/Management/Contact/Index';
+                    },
+                    error: function (data) {
+                        alert("Error: " + data);
+                    }
+                });
+            } else {
+
+            }
+        }
+
+        function ActivateByJs(Id) {
+            var result = confirm("Are you sure you want to Activate?");
+            if (result) {
+                $.ajax({
+                    type: "POST",
+                    url: "/Management/Contact/ActivateByJs",
+                    data: { Id: Id },
+                    success: function (data) {
+                        alert(data);
+                        location.reload();
+                        window.location.href = '/Management/Contact/Index';
+                    },
+                    error: function (data) {
+                        alert("Error: " + data);
+                    }
+                });
+            } else {
+
+            }
+        }
+    </script>
+}

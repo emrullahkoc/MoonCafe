@@ -1,0 +1,133 @@
+﻿@model List<Contact>
+
+@section CssSection {
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
+}
+
+<div class="card radius-15">
+    <div class="card-body">
+        <div class="row">
+            <div class="col-9 row">
+                <div class="card-title">
+                    <h4>Contact</h4>
+                </div>
+            </div>
+        </div>
+        <hr />
+        <div class="table-responsive">
+            <table class="table mb-0" id="dataTable">
+                <thead>
+                    <tr>
+                        <th scope="col" class="text-center"></th>
+                        <th scope="col" class="text-center">Contact</th>
+                        <th scope="col" class="text-center">Contact Name</th>
+                        <th scope="col" class="text-center">Contact Mail</th>
+                        <th scope="col" class="text-center">Creat Date</th>
+                        <th scope="col" class="text-center">Status</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @for (int i = 1; i <= Model.Count(); i++)
+                    {
+                        <tr>
+                            <th scope="row" class="text-center">@i</th>
+                            <td class="text-center"><img class="rounded ml-3 shadow" src="@Model[i - 1].ContactImageUrl" width="90" height="90" style="object-fit: cover" /></td>
+                            <td>@Model[i - 1].ContactFullName</td>
+                            <td class="text-center">@Model[i - 1].ContactMail</td>
+                            <td class="text-center">@Model[i - 1].ContactDate</td>
+                            <td class="text-center">
+                                @if (@Model[i - 1].ContactStatus == true)
+                                {
+                                    <span class="badge" style="background-color: green; color: white;">Active</span>
+                                }
+                                else
+                                {
+                                    <span class="badge" style="background-color: red; color: white;">Passive</span>
+                                }
+                            </td>
+                            <td class="text-end">
+                                @if (@Model[i - 1].ContactStatus == true)
+                                {
+                                    <button class="btn btn-danger" onclick="DeactivateByJs(@Model[i - 1].Id);">Deactivate</button>
+                                }
+                                else
+                                {
+                                    <button class="btn btn-success" onclick="ActivateByJs(@Model[i - 1].Id);">Activate</button>
+                                }
+                                <a class="btn btn-primary"
+                                   href="/Management/Contact/Details/@Model[i - 1].Id">Details</a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+@section ScriptSection {
+    <script>
+        function DeactivateByJs(Id) {
+            var result = confirm("Are you sure you want to Deactivate?");
+            if (result) {
+                $.ajax({
+                    type: "POST",
+                    url: "/Management/Contact/DeactivateByJs",
+                    data: { Id: Id },
+                    success: function (data) {
+                        alert(data);
+                        location.reload();
+                        window.location.href = '/Management/Contact/Index';
+                    },
+                    error: function (data) {
+                        alert("Error: " + data);
+                    }
+                });
+            } else {
+
+            }
+        }
+
+        function ActivateByJs(Id) {
+            var result = confirm("Are you sure you want to Activate?");
+            if (result) {
+                $.ajax({
+                    type: "POST",
+                    url: "/Management/Contact/ActivateByJs",
+                    data: { Id: Id },
+                    success: function (data) {
+                        alert(data);
+                        location.reload();
+                        window.location.href = '/Management/Contact/Index';
+                    },
+                    error: function (data) {
+                        alert("Error: " + data);
+                    }
+                });
+            } else {
+
+            }
+        }
+    </script>
+    <script>
+        $(document).ready(function () {
+            var table = $('#dataTable').DataTable({
+                "pageLength": 10,
+                "order": [[2, 'asc']],
+                "lengthMenu": [[5, 10, 20, 50], [5, 10, 20, 50, "All"]],
+                "drawCallback": function (settings) {
+                    var api = this.api();
+                    var startIndex = api.context[0]._iDisplayStart;
+                    api.column(0, { order: 'applied' }).nodes().each(function (cell, i) {
+                        cell.innerHTML = startIndex + i + 1;
+                    });
+                }
+            });
+        });
+    </script>
+
+    <script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
+}
