@@ -20,21 +20,10 @@ namespace MoonCafe.Areas.Management.Controllers
         }
 
         [HttpGet]
-        public IActionResult Index(string CategoryName)
+        public IActionResult Index()
         {
             var model = db.Categories
                 .ToList();
-            var model2 = new DashboardViewModel();
-            model2.ActivityCount = db.Activities.Include(x => x.Category).Where(x => x.ActivityDate >= DateTime.Now).Count(x => x.ActivityStatus == true);
-
-            if (!string.IsNullOrEmpty(CategoryName))
-            {
-                ViewBag.Search = CategoryName;
-                model = model
-                    .Where(c => c.CategoryName.ToLower()
-                    .Contains(CategoryName.ToLower()))
-                    .ToList();
-            }
             return View(model);
         }
 

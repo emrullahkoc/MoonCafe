@@ -12,17 +12,9 @@ namespace MoonCafe.Areas.Management.Controllers
         MoonCafeContext db = new MoonCafeContext();
 
         [HttpGet]
-        public IActionResult Index(string ContactName)
+        public IActionResult Index()
         {
             var model = db.Contacts.OrderByDescending(x => x.ContactDate).ToList();
-            if (!string.IsNullOrEmpty(ContactName))
-            {
-                ViewBag.Search = ContactName;
-                model = model
-                    .Where(c => c.ContactFullName.ToLower()
-                    .Contains(ContactName))
-                    .ToList();
-            }
             return View(model);
         }
         public async Task<JsonResult> DeactivateByJs(int Id)

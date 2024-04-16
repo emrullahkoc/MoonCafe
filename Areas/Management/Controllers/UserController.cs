@@ -15,20 +15,11 @@ namespace MoonCafe.Areas.Management.Controllers
         MoonCafeContext db = new MoonCafeContext();
 
         [HttpGet]
-        public IActionResult Index(string UserFullName)
+        public IActionResult Index()
         {
-            ViewBag.Search = "";
             var model = db.Users
                 .OrderByDescending(x => x.CreatedDate)
                 .ToList();
-            if (!string.IsNullOrEmpty(UserFullName))
-            {
-                ViewBag.Search = UserFullName;
-                model = model
-                    .Where(c => c.UserFullName.ToLower()
-                    .Contains(UserFullName))
-                    .ToList();
-            }
             return View(model);
         }
         public async Task<JsonResult> DeactivateByJs(int Id)

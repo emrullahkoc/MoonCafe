@@ -20,21 +20,12 @@ namespace MoonCafe.Areas.Management.Controllers
         }
 
         [HttpGet]
-        public IActionResult Index(string ArtistName)
+        public IActionResult Index()
         {
             //var a = User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.NameIdentifier).Value;
-            ViewBag.Search = "";
             var model = db.Artists
                 .OrderByDescending(x => x.CreateDate)
                 .ToList();
-            if (!string.IsNullOrEmpty(ArtistName))
-            {
-                ViewBag.Search = ArtistName;
-                model = model
-                    .Where(c => c.ArtistName
-                    .Contains(ArtistName))
-                    .ToList();
-            }
             return View(model);
         }
 
