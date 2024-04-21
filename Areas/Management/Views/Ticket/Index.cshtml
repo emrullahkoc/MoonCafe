@@ -45,7 +45,7 @@
                             <td class="text-center">
                                 @if (@Model[i - 1].TicketStatus == true)
                                 {
-                                    <span class="badge" style="background-color: green; color: white;">Payment Complete</span>
+                                    <span class="badge" style="background-color: green; color: white;">Payment Completed</span>
                                 }
                                 else
                                 {
@@ -75,15 +75,7 @@
                                         <button class="btn btn-success" onclick="ActivateByJs('@Model[i - 1].Id');">Activate</button>
                                     }
                                 }
-                                <a class="btn btn-primary" href="/Management/Activity/Details/@Model[i - 1].ActivityId">Details</a>
-                                @if (@Model[i - 1].Activity.ActivityDate < DateTime.Now)
-                                {
-
-                                }
-                                else
-                                {
-                                    <a class="btn btn-warning" href="/Management/Activity/Edit/@Model[i - 1].Id">Edit</a>
-                                }
+                                <a class="btn btn-primary" href="/Management/Ticket/Details/@Model[i - 1].Id">Details</a>
                             </td>
                         </tr>
                     }

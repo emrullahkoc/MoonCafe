@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "qIxJrZWh9vcFhb93UFVQHO/Io+tebOD42X+1DYOKO3E=",
+  "Hash": "cfpIpHS7dOXV4B/q8Bcl15YJi+DF1l09LbBwi26W7Fc=",
   "Source": "MoonCafe",
   "BasePath": "_content/MoonCafe",
   "Mode": "Default",
@@ -585,6 +585,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\ImageUpload\\teoman20240410034010.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\ImageUpload\\testimonial-220240421093227.jpg",
+      "SourceId": "MoonCafe",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\",
+      "BasePath": "_content/MoonCafe",
+      "RelativePath": "ImageUpload/testimonial-220240421093227.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\ImageUpload\\testimonial-220240421093227.jpg"
     },
     {
       "Identity": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\ImageUpload\\testimonial-420240410082502.jpg",

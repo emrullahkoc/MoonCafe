@@ -125,13 +125,13 @@ namespace MoonCafe.Areas.Management.Controllers
                             {
                                 if (ticket != null && ticket.TicketStatus == true)
                                 {
-                                    if (ticket.ControlDateTime == null) //giriş
+                                    if (ticket.ControlDateTime == null)
                                     {
                                         ticket.ControlDateTime = DateTime.Now;
                                         await db.SaveChangesAsync();
                                         return Json(new { success = true, message = $"{info.User.UserFullName} {info.NumberPeople} PEOPLE LOGIN DONE" });
                                     }
-                                    else if (ticket.UpdateDate == null && ticket.ControlDateTime != null && ticket.ControlDateTime <= DateTime.Now.AddMinutes(-30)) //çıkış
+                                    else if (ticket.UpdateDate == null && ticket.ControlDateTime != null && ticket.ControlDateTime <= DateTime.Now.AddMinutes(-30))
                                     {
                                         ticket.UpdateDate = DateTime.Now;
                                         await db.SaveChangesAsync();
@@ -141,7 +141,7 @@ namespace MoonCafe.Areas.Management.Controllers
                                     {
                                         return Json(new { success = true, message = $"{info.User.UserFullName} YOU CANNOT LEAVE THE CAFE FOR THE FIRST HALF HOUR" });
                                     }
-                                    else if (ticket.UpdateDate != null && ticket.ControlDateTime != null && ticket.UpdateDate > DateTime.Now.AddMinutes(-60)) // TEKRAR GİRİŞ
+                                    else if (ticket.UpdateDate != null && ticket.ControlDateTime != null && ticket.UpdateDate > DateTime.Now.AddMinutes(-60))
                                     {
                                         ticket.ControlDateTime = DateTime.Now;
                                         ticket.UpdateDate = null;
@@ -208,6 +208,23 @@ namespace MoonCafe.Areas.Management.Controllers
             System.Runtime.InteropServices.Marshal.Copy(bmpData.Scan0, rgbBytes, 0, bytesCount);
             bmp.UnlockBits(bmpData);
             return rgbBytes;
+        }
+
+        [HttpGet]
+        public IActionResult Details(Guid id)
+        {
+            Ticket? model = db.Tickets
+                .Include(x=> x.User)
+                .Include(x=> x.Activity)
+                .ThenInclude(x => x.Category)
+                .Include(x => x.Activity)
+                .ThenInclude(x => x.Artist)
+                .FirstOrDefault(a => a.Id == id);
+            if (model == null)
+            {
+                return Redirect("/Management/Ticket/Index");
+            }
+            return View(model);
         }
     }
 }

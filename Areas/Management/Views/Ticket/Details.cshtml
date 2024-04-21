@@ -1,0 +1,140 @@
+﻿@model Ticket
+
+<h5 class="mb-0 text-uppercase">@Model.User.UserFullName</h5>
+<br />
+@if (Model.TicketStatus == true)
+{
+    <h6>
+        <span class="badge" style="background-color: green; color: white;">
+            Payment Completed
+        </span> &nbsp <i class="lni lni-checkmark" style="color: green;"></i>
+    </h6>
+}
+else
+{
+    <h6>
+        <span class="badge" style="background-color: red; color: white;">
+            Payment Not Made
+        </span> &nbsp <i class="lni lni-close" style="color: red;"></i>
+    </h6>
+}
+<hr />
+<div class="card">
+    <div class="card-body">
+        <div class="p-4 border rounded d-flex">
+            <div class="form-group flex-shrink-0" style="margin-right: 20px;">
+                <img src="@Model.User.UserImageUrl" class="rounded shadow" width="200" height="250" style="object-fit: cover">
+            </div>
+            <form class="row g-3 needs-validation ml-3 w-100">
+                <div class="col-md-4">
+                    <label class="form-label">User Full Name</label>
+                    <input type="text" class="form-control" asp-for="User.UserFullName" readonly>
+                </div>
+                <div class="col-md-4">
+                    <label class="form-label">Activity</label>
+                    <input type="text" class="form-control" asp-for="Activity.ActivityName" readonly>
+                </div>
+                <div class="col-md-4">
+                    <label class="form-label">Category</label>
+                    <input type="text" class="form-control" asp-for="Activity.Category.CategoryName" readonly>
+                </div>
+                <div class="col-md-4">
+                    <label class="form-label">Activity Date</label>
+                    <input type="datetime" class="form-control" value="@(Model.Activity.ActivityDate.ToString("yyyy/MM/dd - HH:mm"))" readonly>
+                </div>
+                <div class="col-md-4">
+                    <label class="form-label">Number of People</label>
+                    <input type="text" class="form-control" asp-for="NumberPeople" readonly>
+                </div>
+                <div class="col-md-4">
+                    <label class="form-label">Created Date</label>
+                    <input type="date" class="form-control" asp-for="CreateDate" readonly>
+                </div>
+                <div class="col-md-4">
+                    <label class="form-label">Activity Price</label>
+                    <input type="text" class="form-control" value="@(Model.Activity.ActivityPrice.ToString("C"))" readonly>
+                </div>
+                @if (Model.TicketStatus == true)
+                {
+                    <div class="col-md-4">
+                        <label class="form-label">Amount Paid</label>
+                        <input type="text" class="form-control" value="@(Model.Activity.ActivityPrice * Model.NumberPeople)" readonly>
+                    </div>
+                }
+                else
+                {
+                    <div class="col-md-4">
+                        <label class="form-label">Total Amount Due</label>
+                        <input type="text" class="form-control" value="@(Model.Activity.ActivityPrice * Model.NumberPeople)" readonly>
+                    </div>
+                }
+                <div class="col-12">
+                    <a class="btn btn-warning m-1 px-5"
+                    <a href="/Management/Ticket/Index" class="btn btn-secondary m-1 px-5">Cancel</a>
+                        @if (Model.TicketStatus == true)
+                        {
+                            <button class="btn btn-danger" onclick="DeactivateByJs('@Model.Id');">Deactivate</button>
+                        }
+                        else
+                        {
+                            if (@Model.Activity.ActivityDate < DateTime.Now)
+                            {
+
+                            }
+                            else
+                            {
+                                <button class="btn btn-success" onclick="ActivateByJs('@Model.Id');">Activate</button>
+                            }
+                        }
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+@section ScriptSection {
+    <script>
+        function DeactivateByJs(Id) {
+            var result = confirm("Are you sure you want to Deactivate?");
+            if (result) {
+                $.ajax({
+                    type: "POST",
+                    url: "/Management/Ticket/DeactivateByJs",
+                    data: { Id: Id },
+                    success: function (data) {
+                        alert(data);
+                        location.reload();
+                        window.location.href = '/Management/Ticket/Index';
+                    },
+                    error: function (data) {
+                        alert("Error: " + data);
+                    }
+                });
+            } else {
+
+            }
+        }
+
+        function ActivateByJs(Id) {
+            var result = confirm("Are you sure you want to Activate?");
+            if (result) {
+                $.ajax({
+                    type: "POST",
+                    url: "/Management/Ticket/ActivateByJs",
+                    data: { Id: Id },
+                    success: function (data) {
+                        alert(data);
+                        location.reload();
+                        window.location.href = '/Management/Ticket/Index';
+                    },
+                    error: function (data) {
+                        alert("Error: " + data);
+                    }
+                });
+            } else {
+
+            }
+        }
+    </script>
+}

@@ -3,7 +3,6 @@ using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
 using MoonCafe.Models;
-using MoonCafe.Models.ViewModels;
 
 namespace MoonCafe.Controllers
 {
@@ -18,59 +17,96 @@ namespace MoonCafe.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> LoginAsync(LoginViewModel model)
+        public async Task<IActionResult> LoginAsync(User model)
         {
-            if (ModelState.IsValid)
-            {
-                var user = db.Users.FirstOrDefault(
-                x => x.UserEmail == model.UserEmail
-                && x.UserPassword == model.UserPassword
-                && x.UserStatus == true);
 
-                if (user != null)
-                {
-                    // Create a list of claims for the user
-                    var claims = new List<Claim>{
+            var user = db.Users.FirstOrDefault(
+            x => x.UserEmail == model.UserEmail
+            && x.UserPassword == model.UserPassword
+            && x.UserStatus == true);
+
+            if (user != null)
+            {
+                var claims = new List<Claim>{
                     new Claim(ClaimTypes.Email, user.UserEmail),
                     new Claim(ClaimTypes.Name, user.UserFullName),
                     new Claim(ClaimTypes.Actor, user.UserImageUrl ?? ""),
                     new Claim(ClaimTypes.Role, user.Role),
                     new Claim(ClaimTypes.NameIdentifier, user.Id.ToString())};
 
-                    // Create a ClaimsIdentity object for the user
-                    var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
+                var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
 
-                    // Create an AuthenticationProperties object to store additional information about the authentication process
-                    var authProperties = new AuthenticationProperties
-                    {
-                        AllowRefresh = true,
-                        // Refreshing the authentication session should be allowed.
-                        ExpiresUtc = DateTimeOffset.UtcNow.AddDays(1),
-                    };
+                var authProperties = new AuthenticationProperties
+                {
+                    AllowRefresh = true,
+                    ExpiresUtc = DateTimeOffset.UtcNow.AddDays(1),
+                };
 
-                    // Sign in the user
-                    await HttpContext.SignInAsync(
-                    CookieAuthenticationDefaults.AuthenticationScheme,
-                    new ClaimsPrincipal(claimsIdentity),
-                    authProperties);
+                await HttpContext.SignInAsync(
+                CookieAuthenticationDefaults.AuthenticationScheme,
+                new ClaimsPrincipal(claimsIdentity),
+                authProperties);
 
-                    // Redirect the user to the appropriate action based on their role
-                    if (user.Role == "Admin")
-                    {
-                        return RedirectToAction("Index", "Home", new { area = "Management", controller = "Activity", action = "Index" });
-                    }
-                    else
-                    {
-                        return RedirectToAction("Index", "Home", new { controller = "Home", action = "Index" });
-                    }
+                if (user.Role == "Admin")
+                {
+                    return RedirectToAction("Index", "Home", new { area = "Management", controller = "Activity", action = "Index" });
+                }
+                else
+                {
+                    return RedirectToAction("Index", "Home", new { controller = "Home", action = "Index" });
                 }
 
-                // If the user is not authenticated, display a message indicating that the provided information is incorrect
-                ViewBag.Message = "Please check your information";
             }
-
-            // If the model is not valid, display the login page again with the provided model
+            ViewBag.Message = "Please check your information";
             return View(model);
+        }
+
+
+        [HttpPost]
+        public async Task<IActionResult> Register(User model)
+        {
+            var user = new User();
+            user.UserImageUrl = "/ImageUpload/logo2.png";
+            user.UserFullName = model.UserFullName.ToUpper();
+            user.UserEmail = model.UserEmail;
+            user.UserPassword = model.UserPassword;
+            user.UserStatus = true;
+            user.Role = "Customer";
+            user.CreatedDate = DateTime.Now;
+            db.Users.Add(user);
+            int changes = db.SaveChanges();
+            if (changes > 0)
+            {
+                var claims = new List<Claim>{
+                    new Claim(ClaimTypes.Email, user.UserEmail),
+                    new Claim(ClaimTypes.Name, user.UserFullName),
+                    new Claim(ClaimTypes.Actor, user.UserImageUrl ?? ""),
+                    new Claim(ClaimTypes.Role, user.Role),
+                    new Claim(ClaimTypes.NameIdentifier, user.Id.ToString())};
+
+                var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
+
+                var authProperties = new AuthenticationProperties
+                {
+                    AllowRefresh = true,
+                    ExpiresUtc = DateTimeOffset.UtcNow.AddDays(1),
+                };
+
+                await HttpContext.SignInAsync(
+                CookieAuthenticationDefaults.AuthenticationScheme,
+                new ClaimsPrincipal(claimsIdentity),
+                authProperties);
+
+                if (user.Role == "Admin")
+                {
+                    return RedirectToAction("Index", "Home", new { area = "Management", controller = "Activity", action = "Index" });
+                }
+                else
+                {
+                    return RedirectToAction("Index", "Home", new { controller = "Home", action = "Index" });
+                }
+            }
+            return Redirect("/Home/Index");
         }
 
         public async Task<IActionResult> Logout()

@@ -11,7 +11,7 @@
                         <h2 class="mb-0 text-white">@Model.ArtistCount </h2>
                     </div>
                     <div class="ms-auto font-35 text-white">
-                        <i class="lni lni-write"></i>
+                        <i class="lni lni-drupal-original"></i>
                     </div>
                 </div>
                 <div class="d-flex align-items-center">
@@ -30,7 +30,7 @@
                         <h2 class="mb-0 text-white">@Model.CategoryCount </h2>
                     </div>
                     <div class="ms-auto font-35 text-white">
-                        <i class="lni lni-write"></i>
+                        <i class="lni lni-music"></i>
                     </div>
                 </div>
                 <div class="d-flex align-items-center">
@@ -49,7 +49,7 @@
                         <h2 class="mb-0 text-white">@Model.ActivityCount</h2>
                     </div>
                     <div class="ms-auto font-35 text-white">
-                        <i class="lni lni-book"></i>
+                        <i class="lni lni-night"></i>
                     </div>
                 </div>
                 <div class="d-flex align-items-center">
@@ -98,7 +98,7 @@
                     @foreach (var item in Model.Activities)
                     {
                         <tr>
-                            <th scope="row">@rowNumber</th>
+                            <th scope="row"></th>
                             <td><img class="rounded ml-3 shadow" src="@item.ActivityImageUrl" width="90" height="90" style="object-fit: cover" /></td>
                             <td>@item.ActivityName</td>
                             <td>@item.Category?.CategoryName</td>
@@ -126,11 +126,11 @@
 @section ScriptSection {
     <script>
         function deleteActivity(Id) {
-            var result = confirm("Are you sure you want to delete?");
+            var result = confirm("Are you sure you want to Deactivate?");
             if (result) {
                 $.ajax({
                     type: "POST",
-                    url: "/Management/Activity/DeleteByJs",
+                    url: "/Management/Activity/DeactivateByJs",
                     data: { Id: Id },
                     success: function (data) {
                         alert(data);
@@ -155,11 +155,15 @@
                 "drawCallback": function (settings) {
                     var api = this.api();
                     var startIndex = api.context[0]._iDisplayStart;
+                    if (api.page.info().page > 0) {
+                        startIndex = startIndex - (api.page.info().page * api.page.info().length);
+                    }
                     api.column(0, { order: 'applied' }).nodes().each(function (cell, i) {
                         cell.innerHTML = startIndex + i + 1;
                     });
                 }
             });
+            table.page(0).draw(false);
         });
     </script>
 

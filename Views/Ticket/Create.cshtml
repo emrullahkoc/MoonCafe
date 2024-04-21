@@ -28,7 +28,7 @@
                     <h1 class="text-white mb-3">
                         Ticket Information
                     </h1>
-                    <form method="post" enctype="multipart/form-data" asp-action="Create">
+                    <form id="ticketForm" method="post" enctype="multipart/form-data" asp-action="Create">
                         <div class="row g-3">
                             <div class="col-md-12">
                                 <div class="form-floating">
@@ -64,7 +64,7 @@
                                 <button class="btn btn-secondary text-white w-100 py-3" type="submit">Buy Tickets</button>
                             </div>
                             <div class="col-6">
-                                <a href="/Ticket/Index" class="btn btn-secondary text-white w-100 py-3">Cancel</a>
+                                <a href="/Home/Activities" class="btn btn-secondary text-white w-100 py-3">Cancel</a>
                             </div>
                         </div>
                     </form>
@@ -82,4 +82,30 @@ else
             </h1>
         </div>
     </div>
+}
+
+@section ScriptSection 
+{
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#ticketForm').submit(function (e) {
+                e.preventDefault();
+
+                $.ajax({
+                    url: $(this).attr('action'),
+                    type: $(this).attr('method'),
+                    data: $(this).serialize(),
+                    success: function (response) {
+
+                        alert('YOUR TICKET HAS BEEN CREATED, PLEASE MAKE PAYMENT');
+                        window.location.href = '/Home/Index';
+                    },
+                    error: function (xhr, status, error) {
+                        console.error(error);
+                    }
+                });
+            });
+        });
+    </script>
 }

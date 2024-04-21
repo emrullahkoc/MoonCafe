@@ -41,15 +41,14 @@
                     <div class="row g-3">
                         <div class="col-md-6">
                             <div class="form-floating">
-                                <input type="text" class="form-control border-0" asp-for="ContactFullName" placeholder="Your Name">
+                                <input type="text" class="form-control border-0" asp-for="ContactFullName" placeholder="Your Name" required>
                                 <label for="name">Your Name</label>
                                 <span class="text-danger" asp-validation-for="ContactFullName"></span>
-
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-floating">
-                                <input type="email" class="form-control border-0" asp-for="ContactMail" placeholder="Your Email">
+                                <input type="email" class="form-control border-0" asp-for="ContactMail" placeholder="Your Email" required>
                                 <label for="email">Your Email</label>
                                 <span class="text-danger" asp-validation-for="ContactMail"></span>
                             </div>
@@ -64,7 +63,7 @@
                         </div>
                         <div class="col-12">
                             <div class="form-floating">
-                                <textarea class="form-control border-0" placeholder="Leave a message here" asp-for="ContactMessage" style="height: 160px"></textarea>
+                                <textarea class="form-control border-0" placeholder="Leave a message here" asp-for="ContactMessage" style="height: 160px" required></textarea>
                                 <label for="message">Message</label>
                                 <span class="text-danger" asp-validation-for="ContactMessage"></span>
                             </div>

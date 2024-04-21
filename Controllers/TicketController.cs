@@ -40,6 +40,9 @@ namespace MoonCafe.Controllers
         public async Task<IActionResult> Create(Ticket model, int id, int NumberPeople)
         {
             var a = User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.NameIdentifier).Value;
+            var b = User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Name).Value;
+            var activityId = db.Activities.Find(id);
+
             ModelState.Remove("Id");
             if (ModelState.IsValid)
             {
@@ -50,6 +53,9 @@ namespace MoonCafe.Controllers
                 model.TicketStatus = false;
                 db.Tickets.Add(model);
                 db.SaveChanges();
+
+                MailSender.SendAdmin("Ticket Created", $"{b} </br></br> {activityId.ActivityName} </br></br>{activityId.ActivityDate} </br></br> {model.NumberPeople} NUMBER PEOPLE </br></br> AMOUNT TO BE PAID {model.NumberPeople * activityId.ActivityPrice} </br></br> {model.CreateDate}", null, null);
+
                 return Redirect("~/Home/Index");
             }
             return View(model);

@@ -134,6 +134,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlbWVudFxWaWV3c1xUaWNrZXRcQ2FtZXJhLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/emrullahkoc/Desktop/YAZILIM/MoonCafe/MoonCafe/Areas/Management/Views/Ticket/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlbWVudFxWaWV3c1xUaWNrZXRcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/emrullahkoc/Desktop/YAZILIM/MoonCafe/MoonCafe/Areas/Management/Views/Ticket/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlbWVudFxWaWV3c1xUaWNrZXRcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

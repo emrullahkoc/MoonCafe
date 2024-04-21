@@ -49,6 +49,15 @@ namespace MoonCafe.Controllers
             model.ContactMessage = model.ContactMessage;
             db.Contacts.Add(model);
             db.SaveChanges();
+
+            MemoryStream imageStream = null;
+            if (img != null)
+            {
+                imageStream = new MemoryStream();
+                await img.CopyToAsync(imageStream);
+                imageStream.Position = 0;
+                MailSender.SendAdmin("Comment Written", $"{model.ContactFullName} </br></br> {model.ContactMessage} </br></br> {model.ContactMail} </br></br> {model.ContactDate}", imageStream, img != null ? img.FileName : null);
+            }
             return View();
         }
 
