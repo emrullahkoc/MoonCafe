@@ -37,14 +37,14 @@
                     @for (int i = 1; i <= Model.Count(); i++)
                     {
                         <tr>
-                            <th scope="row" class="text-center">@i</th>
+                            <th scope="row" class="text-center"></th>
                             <td class="text-center"><img class="rounded ml-3 shadow" src="@Model[i - 1].ActivityImageUrl" width="90" height="90" style="object-fit: cover" /></td>
                             <td>@Model[i - 1].ActivityName</td>
                             <td class="text-center">@Model[i - 1].Category?.CategoryName</td>
                             <td class="text-center">@Model[i - 1].Artist?.ArtistName</td>
-                            <td class="text-center">@Model[i - 1].ActivityDate.ToString("dd MMMM HH:mm")</td>
+                            <td class="text-center">@Model[i - 1].ActivityDate.ToString("dd MMMM yyyy HH:mm")</td>
                             <td class="text-center">@Model[i - 1].ActivityPrice.ToString("C")</td>
-                            <td class="text-center">@Model[i - 1].CreateDate.ToString("dd MMMM yyyy")</td>
+                            <td class="text-center">@Model[i - 1].CreateDate.ToString("MMMM yyyy")</td>
                             <td class="text-center">
                                 @if (@Model[i - 1].ActivityStatus == true)
                                 {
@@ -52,7 +52,15 @@
                                 }
                                 else
                                 {
-                                    <span class="badge" style="background-color: red; color: white;">Passive</span>
+                                    if (@Model[i - 1].ActivityDate < DateTime.Now)
+                                    {
+                                        <span class="badge" style="background-color: red; color: white;">EVENT DURATION IS OVER</span>
+
+                                    }
+                                    else
+                                    {
+                                        <span class="badge" style="background-color: red; color: white;">Passive</span>
+                                    }
                                 }
                             </td>
                             <td class ="text-end">
@@ -62,7 +70,14 @@
                                 }
                                 else
                                 {
-                                    <button class="btn btn-success" onclick="ActivateByJs(@Model[i - 1].Id);">Activate</button>
+                                    if (@Model[i - 1].ActivityDate < DateTime.Now)
+                                    {
+                                        
+                                    }
+                                    else
+                                    {
+                                        <button class="btn btn-success" onclick="ActivateByJs(@Model[i - 1].Id);">Activate</button>
+                                    }
                                 }
                                 <a class="btn btn-primary"
                                    href="/Management/Activity/Details/@Model[i - 1].Id">Details</a>
@@ -131,11 +146,15 @@
                 "drawCallback": function (settings) {
                     var api = this.api();
                     var startIndex = api.context[0]._iDisplayStart;
+                    if (api.page.info().page > 0) {
+                        startIndex = startIndex - (api.page.info().page * api.page.info().length);
+                    }
                     api.column(0, { order: 'applied' }).nodes().each(function (cell, i) {
                         cell.innerHTML = startIndex + i + 1;
                     });
                 }
             });
+            table.page(0).draw(false);
         });
     </script>
 

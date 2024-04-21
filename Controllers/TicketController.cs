@@ -1,14 +1,29 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using MoonCafe.Models;
-using QRCoder;
+using MoonCafe.Utils;
 using System.Security.Claims;
 
 namespace MoonCafe.Controllers
 {
+    [Authorize]
     public class TicketController : Controller
     {
         MoonCafeContext db = new MoonCafeContext();
+
+        [HttpGet]
+        public IActionResult QrCod(Guid id)
+        {
+            if (id != null)
+            {
+                var qr = ZXingQrCode.GenerateQR(id);
+                return Content(qr, "image/svg+xml");
+            }
+            return View();
+        }
+
+        [HttpGet]
         public IActionResult Create(int id)
         {
             Activity? model = db.Activities
@@ -28,52 +43,56 @@ namespace MoonCafe.Controllers
             ModelState.Remove("Id");
             if (ModelState.IsValid)
             {
-                model.ActivityId= Convert.ToInt32(id);
+                model.ActivityId = Convert.ToInt32(id);
                 model.UserId = Convert.ToInt32(a);
                 model.NumberPeople = NumberPeople;
                 model.CreateDate = DateTime.Now;
                 model.TicketStatus = false;
                 db.Tickets.Add(model);
                 db.SaveChanges();
-                return Redirect("~/Ticket/Index");
+                return Redirect("~/Home/Index");
             }
             return View(model);
         }
 
-        [HttpGet("qrcode/{id}")]
-        public IActionResult GenerateQRCode(Guid id)
-        {
-            Ticket? model = db.Tickets.Find(id);
-            Ticket myTicket = GetMyTicketById(id);
-
-            if (myTicket == null)
-            {
-                return NotFound();
-            }
-            var qr = new
-            {
-                Name = myTicket.User.UserFullName,
-                Activity = myTicket.Activity.ActivityName,
-                Ticket = model.Id,
-            };
-            QRCodeGenerator generator = new();
-            QRCodeData data = generator.CreateQrCode(qr.ToString(), QRCodeGenerator.ECCLevel.Q);
-            PngByteQRCode qrCode = new(data);
-            byte[] byteGraphic = qrCode.GetGraphic(5, new byte[] { 84, 99, 71 }, new byte[] { 240, 246, 240 });
-            return File(byteGraphic, "image/png");
-        }
-
-        private Ticket GetMyTicketById(Guid id)
-        {
-            using (var context = new MoonCafeContext())
-            {
-                return context.Tickets.Include(x => x.User).Include(x => x.Activity).FirstOrDefault(t => t.Id == id);
-            }
-        }
-
+        [HttpGet]
         public IActionResult MyTicket()
         {
-            return View();
+            var a = User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.NameIdentifier).Value;
+            int userId;
+            if (!int.TryParse(a, out userId))
+            {
+                return BadRequest("Invalid user ID");
+            }
+
+            var model = db.Tickets
+                .Include(x => x.Activity)
+                .ThenInclude(x => x.Artist)
+                .Include(x => x.Activity)
+                .Include(x => x.User).Where(x => x.UserId == userId)
+                .OrderBy(x => x.Activity.ActivityDate)
+                .ToList();
+
+            if (model.Any(x => x.Activity.ActivityDate < DateTime.Now))
+            {
+                var activitiesWithPastDates = model.Where(x => x.Activity.ActivityDate < DateTime.Now);
+                activitiesWithPastDates.ToList().ForEach(x => x.TicketStatus = false);
+                db.SaveChanges();
+            }
+            return View(model);
+        }
+
+        public async Task<JsonResult> DeactivateByJs(Guid Id)
+        {
+            var ticket = await db.Tickets.FindAsync(Id);
+            if (ticket == null)
+            {
+                return Json("No Such Ticket Found");
+            }
+            ticket.TicketStatus = false;
+            ticket.UpdateDate = DateTime.Now;
+            await db.SaveChangesAsync();
+            return Json("Your ticket has been successfully canceled");
         }
     }
 }

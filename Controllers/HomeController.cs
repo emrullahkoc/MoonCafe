@@ -74,7 +74,6 @@ namespace MoonCafe.Controllers
                                     .Take(4).ToList();
 
             model.FinishedActivities = db.Activities
-                                    .Where(x => x.ActivityStatus == true)
                                     .Include(x => x.Artist)
                                     .Include(x => x.Category)
                                     .Where(x => x.ActivityDate <= DateTime.Now)
@@ -99,7 +98,7 @@ namespace MoonCafe.Controllers
         [HttpGet]
         public IActionResult Artists()
         {
-            var model = db.Artists.Where(c => c.ArtistStatus == true)
+            var model = db.Artists.Where(x => x.ArtistStatus == true)
                 .OrderByDescending(x => x.CreateDate)
                 .Include(x => x.Activities)
                 .ThenInclude(x => x.Category)
@@ -110,10 +109,10 @@ namespace MoonCafe.Controllers
         [HttpGet]
         public IActionResult ArtistsDetails(int id)
         {
-            var model = db.Artists.Where(c => c.ArtistStatus == true)
+            var model = db.Artists.Where(x => x.ArtistStatus == true)
                 .Include(x => x.Activities.Where(x => x.ActivityDate >= DateTime.Now))
                 .ThenInclude(x => x.Category)
-                .FirstOrDefault(a => a.Id == id);
+                .FirstOrDefault(x => x.Id == id);
             if (model == null)
             {
                 return Redirect("/Home/Artists");
@@ -124,7 +123,7 @@ namespace MoonCafe.Controllers
         [HttpGet]
         public IActionResult Activities()
         {
-            var model = db.Activities.Where(c => c.ActivityStatus == true)
+            var model = db.Activities.Where(x => x.ActivityStatus == true)
                 .OrderByDescending(x => x.CreateDate)
                 .Include(x => x.Category)
                 .Include(x => x.Artist)
@@ -139,7 +138,7 @@ namespace MoonCafe.Controllers
             var model = db.Activities
                 .Include(x => x.Category)
                 .Include(x => x.Artist)
-                .FirstOrDefault(a => a.Id == id);
+                .FirstOrDefault(x => x.Id == id);
             return View(model);
         }
         [HttpGet]

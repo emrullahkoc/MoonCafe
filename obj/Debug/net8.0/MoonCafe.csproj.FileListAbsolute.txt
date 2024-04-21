@@ -254,5 +254,8 @@ C:\Users\emrullahkoc\Desktop\YAZILIM\MoonCafe\MoonCafe\bin\Debug\net8.0\Areas\Ma
 C:\Users\emrullahkoc\Desktop\YAZILIM\MoonCafe\MoonCafe\obj\Debug\net8.0\scopedcss\Areas\Management\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\emrullahkoc\Desktop\YAZILIM\MoonCafe\MoonCafe\bin\Debug\net8.0\Microsoft.AspNetCore.JsonPatch.dll
 C:\Users\emrullahkoc\Desktop\YAZILIM\MoonCafe\MoonCafe\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll
-C:\Users\emrullahkoc\Desktop\YAZILIM\MoonCafe\MoonCafe\bin\Debug\net8.0\QRCoder.dll
 C:\Users\emrullahkoc\Desktop\YAZILIM\MoonCafe\MoonCafe\obj\Debug\net8.0\MoonCafe.sourcelink.json
+C:\Users\emrullahkoc\Desktop\YAZILIM\MoonCafe\MoonCafe\bin\Debug\net8.0\zxing.dll
+C:\Users\emrullahkoc\Desktop\YAZILIM\MoonCafe\MoonCafe\bin\Debug\net8.0\libman.json
+C:\Users\emrullahkoc\Desktop\YAZILIM\MoonCafe\MoonCafe\bin\Debug\net8.0\QRCoder.dll
+C:\Users\emrullahkoc\Desktop\YAZILIM\MoonCafe\MoonCafe\bin\Debug\net8.0\QrCodeGenerator.dll

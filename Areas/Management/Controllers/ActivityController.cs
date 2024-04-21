@@ -24,10 +24,18 @@ namespace MoonCafe.Areas.Management.Controllers
         public IActionResult Index()
         {
             var model = db.Activities
-                .Include(x => x.Category)
-                .Include(x => x.Artist)
-                .OrderBy(x => x.ActivityDate)
-                .ToList();
+               .Include(x => x.Category)
+               .Include(x => x.Artist)
+               .OrderByDescending(x => x.ActivityDate)
+               .ToList();
+
+            if (model.Any(x => x.ActivityDate < DateTime.Now))
+            {
+                var activitiesWithPastDates = model.Where(x => x.ActivityDate < DateTime.Now);
+                activitiesWithPastDates.ToList().ForEach(x => x.ActivityStatus = false);
+                db.SaveChanges();
+            }
+
             return View(model);
         }
 

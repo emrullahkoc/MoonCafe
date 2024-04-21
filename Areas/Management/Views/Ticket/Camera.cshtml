@@ -1,0 +1,61 @@
+﻿@model Activity
+
+@section CssSection {
+    <style>
+        video {
+            width: 50%;
+            height: auto;
+        }
+
+        canvas {
+            display: none;
+        }
+    </style>
+}
+
+<video id="camera-feed" autoplay></video>
+<canvas id="capture-canvas" width="640" height="480" style="display: none;"></canvas>
+<h1 name="id" id="activityId" style="display: none;">@Model.Id</h1>
+
+@section ScriptSection {
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.7.1.js"></script>
+    <script>
+        window.addEventListener('load', function startCamera() {
+            navigator.mediaDevices.getUserMedia({ video: true })
+                .then(stream => {
+                    const videoElement = document.getElementById('camera-feed');
+                    videoElement.srcObject = stream;
+                })
+                .catch(error => {
+                    console.error('Error accessing camera:', error);
+                });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            setInterval(captureAndSend, 2000);
+        });
+        function captureAndSend() {
+            const video = document.getElementById('camera-feed');
+            const canvas = document.getElementById('capture-canvas');
+            const context = canvas.getContext('2d');
+            context.drawImage(video, 0, 0, canvas.width, canvas.height);
+            const imageDataUrl = canvas.toDataURL('image/jpeg');
+            const activityId = document.getElementById('activityId').innerText;
+
+            $.ajax({
+                url: '/Management/Ticket/GetData',
+                type: 'POST',
+                data: { "data": imageDataUrl, "id": activityId },
+                success: function (response) {
+                    if (response.success) {
+                        alert(response.message);
+                    }
+                },
+                error: function (error) {
+                }
+            });
+        }
+    </script>
+}

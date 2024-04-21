@@ -14,7 +14,9 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.3",
           "Microsoft.EntityFrameworkCore.Tools": "8.0.3",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "8.0.2",
-          "QRCoder": "1.4.3"
+          "Net.Codecrete.QrCodeGenerator": "2.0.5",
+          "QRCoder": "1.4.1",
+          "ZXing.Net": "0.16.9"
         },
         "runtime": {
           "MoonCafe.dll": {}
@@ -1726,6 +1728,14 @@
           }
         }
       },
+      "Net.Codecrete.QrCodeGenerator/2.0.5": {
+        "runtime": {
+          "lib/netstandard2.0/QrCodeGenerator.dll": {
+            "assemblyVersion": "1.6.0.0",
+            "fileVersion": "2.0.5.0"
+          }
+        }
+      },
       "NETStandard.Library/1.6.1": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "5.0.0",
@@ -1894,11 +1904,14 @@
           }
         }
       },
-      "QRCoder/1.4.3": {
+      "QRCoder/1.4.1": {
+        "dependencies": {
+          "System.Drawing.Common": "7.0.0"
+        },
         "runtime": {
-          "lib/net6.0/QRCoder.dll": {
-            "assemblyVersion": "1.4.3.0",
-            "fileVersion": "1.4.3.0"
+          "lib/netstandard2.0/QRCoder.dll": {
+            "assemblyVersion": "1.4.1.0",
+            "fileVersion": "1.4.1.0"
           }
         }
       },
@@ -2733,6 +2746,14 @@
           "System.Text.Encoding": "4.3.0",
           "System.Threading": "4.3.0",
           "System.Xml.ReaderWriter": "4.3.0"
+        }
+      },
+      "ZXing.Net/0.16.9": {
+        "runtime": {
+          "lib/net7.0/zxing.dll": {
+            "assemblyVersion": "0.16.9.0",
+            "fileVersion": "0.16.9.0"
+          }
         }
       }
     }
@@ -3758,6 +3779,13 @@
       "path": "mono.texttemplating/2.3.1",
       "hashPath": "mono.texttemplating.2.3.1.nupkg.sha512"
     },
+    "Net.Codecrete.QrCodeGenerator/2.0.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-jH8i2g7liqxMVyY8WsNzJwMpwHqeWvGRl0f2GMW+C2CLT8vyIT72fdN+HfZeVFdDG0AMLxbvMPrpavXsL76LGQ==",
+      "path": "net.codecrete.qrcodegenerator/2.0.5",
+      "hashPath": "net.codecrete.qrcodegenerator.2.0.5.nupkg.sha512"
+    },
     "NETStandard.Library/1.6.1": {
       "type": "package",
       "serviceable": true,
@@ -3842,12 +3870,12 @@
       "path": "nuget.versioning/6.9.1",
       "hashPath": "nuget.versioning.6.9.1.nupkg.sha512"
     },
-    "QRCoder/1.4.3": {
+    "QRCoder/1.4.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-fWuFqjm8GTlEb2GqBl3Hi8HZZeZQwBSHxvRPtPjyNbT82H0ff0JwavKRBmMaXCno1Av6McPC8aJzri0Mj2w9Jw==",
-      "path": "qrcoder/1.4.3",
-      "hashPath": "qrcoder.1.4.3.nupkg.sha512"
+      "sha512": "sha512-W8KwCwsOJe9SI7Cm7XeIMawd08F/US6xNw34lg2Qnx6m7GYYakxbyBQaNoW1Q75oJOmX/32sJUZr6Cix2B6GUQ==",
+      "path": "qrcoder/1.4.1",
+      "hashPath": "qrcoder.1.4.1.nupkg.sha512"
     },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
       "type": "package",
@@ -4583,6 +4611,13 @@
       "sha512": "sha512-5zJ0XDxAIg8iy+t4aMnQAu0MqVbqyvfoUVl1yDV61xdo3Vth45oA2FoY4pPkxYAH5f8ixpmTqXeEIya95x0aCQ==",
       "path": "system.xml.xdocument/4.3.0",
       "hashPath": "system.xml.xdocument.4.3.0.nupkg.sha512"
+    },
+    "ZXing.Net/0.16.9": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-7WaVMHklpT3Ye2ragqRIwlFRsb6kOk63BOGADV0fan3ulVfGLUYkDi5yNUsZS/7FVNkWbtHAlDLmu4WnHGfqvQ==",
+      "path": "zxing.net/0.16.9",
+      "hashPath": "zxing.net.0.16.9.nupkg.sha512"
     }
   }
 }

@@ -35,7 +35,7 @@
                     @for (int i = 1; i <= Model.Count(); i++)
                     {
                         <tr>
-                            <th scope="row" class="text-center">@i</th>
+                            <th scope="row" class="text-center"></th>
                             <td class="text-center"><img class="rounded ml-3 shadow" src="@Model[i - 1].ArtistImageUrl" width="90" height="90" style="object-fit: cover" /></td>
                             <td>@Model[i - 1].ArtistName</td>
                             <td class="text-center">@Model[i - 1].ArtistBirthDate.ToString("dd MMMM yyyy")</td>
@@ -117,6 +117,7 @@
             }
         }
     </script>
+
     <script>
         $(document).ready(function () {
             var table = $('#dataTable').DataTable({
@@ -126,11 +127,15 @@
                 "drawCallback": function (settings) {
                     var api = this.api();
                     var startIndex = api.context[0]._iDisplayStart;
+                    if (api.page.info().page > 0) {
+                        startIndex = startIndex - (api.page.info().page * api.page.info().length);
+                    }
                     api.column(0, { order: 'applied' }).nodes().each(function (cell, i) {
                         cell.innerHTML = startIndex + i + 1;
                     });
                 }
             });
+            table.page(0).draw(false);
         });
     </script>
 

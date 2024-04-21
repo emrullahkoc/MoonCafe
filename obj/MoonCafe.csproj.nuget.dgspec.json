@@ -78,9 +78,17 @@
               "target": "Package",
               "version": "[8.0.2, )"
             },
+            "Net.Codecrete.QrCodeGenerator": {
+              "target": "Package",
+              "version": "[2.0.5, )"
+            },
             "QRCoder": {
               "target": "Package",
-              "version": "[1.4.3, )"
+              "version": "[1.4.1, )"
+            },
+            "ZXing.Net": {
+              "target": "Package",
+              "version": "[0.16.9, )"
             }
           },
           "imports": [

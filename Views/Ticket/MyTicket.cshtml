@@ -4,29 +4,28 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
 }
 
+<div class="container-fluid bg-breadcrumb">
+    <div class="container text-center" style="max-width: 900px;">
+        <h1 class="text-white display-3 mb-4">
+            My Tickets
+        </h1>
+    </div>
+</div>
 <div class="card radius-15">
     <div class="card-body">
-        <div class="row">
-            <div class="col-9 row">
-                <div class="card-title">
-                    <h4>Tickets</h4>
-                </div>
-            </div>
-        </div>
         <hr />
         <div class="table-responsive">
             <table class="table mb-0" id="dataTable">
                 <thead>
                     <tr>
                         <th scope="col" class="text-center"></th>
-                        <th scope="col" class="text-center">User</th>
-                        <th scope="col" class="text-center">Use Namer</th>
+                        <th scope="col" class="text-center">Activity</th>
                         <th scope="col" class="text-center">Activity Name</th>
-                        <th scope="col" class="text-center">Category</th>
                         <th scope="col" class="text-center">Artist</th>
+                        <th scope="col" class="text-center">Number of People</th>
                         <th scope="col" class="text-center">Activity Date</th>
-                        <th scope="col" class="text-center">Create Date</th>
-                        <th scope="col" class="text-center">Payment</th>
+                        <th scope="col" class="text-center">Activity Time</th>
+                        <th scope="col" class="text-center">Status</th>
                         <th></th>
                     </tr>
                 </thead>
@@ -35,17 +34,18 @@
                     {
                         <tr>
                             <th scope="row" class="text-center"></th>
-                            <td class="text-center"><img class="rounded ml-3 shadow" src="@Model[i - 1].User.UserImageUrl" width="90" height="90" style="object-fit: cover" /></td>
-                            <td>@Model[i - 1].User.UserFullName</td>
+                            <td class="text-center"><img class="rounded ml-3 shadow" src="@Model[i - 1].Activity.ActivityImageUrl" width="50" height="50" style="object-fit: cover" /></td>
                             <td>@Model[i - 1].Activity.ActivityName</td>
-                            <td class="text-center">@Model[i - 1].Activity.Category?.CategoryName</td>
-                            <td class="text-center">@Model[i - 1].Activity.Artist?.ArtistName</td>
-                            <td class="text-center">@Model[i - 1].Activity.ActivityDate.ToString("dd MMMM yyy HH:mm")</td>
-                            <td class="text-center">@Model[i - 1].CreateDate.ToString("MMMM yyyy")</td>
+                            <td class="text-center">@Model[i - 1].Activity.Artist.ArtistName</td>
+                            <td class="text-center">@Model[i - 1].NumberPeople</td>
+                            <td class="text-center">@Model[i - 1].Activity.ActivityDate.ToString("dd MMMM yyyy")</td>
+                            <td class="text-center">@Model[i - 1].Activity.ActivityDate.ToString("HH:mm")</td>
                             <td class="text-center">
                                 @if (@Model[i - 1].TicketStatus == true)
                                 {
-                                    <span class="badge" style="background-color: green; color: white;">Payment Complete</span>
+                                    <span class="badge" style="background-color: green; color: white;">
+                                        Purchased Ticket
+                                    </span>
                                 }
                                 else
                                 {
@@ -62,27 +62,22 @@
                             <td class="text-end">
                                 @if (@Model[i - 1].TicketStatus == true)
                                 {
-                                    <button class="btn btn-danger" onclick="DeactivateByJs('@Model[i - 1].Id');">Deactivate</button>
+                                    <button class="btn btn-danger" onclick="DeactivateByJs('@Model[i - 1].Id');">Cancel Ticket</button>
                                 }
-                                else
-                                {
-                                    if (@Model[i - 1].Activity.ActivityDate < DateTime.Now)
-                                    {
-
-                                    }
-                                    else
-                                    {
-                                        <button class="btn btn-success" onclick="ActivateByJs('@Model[i - 1].Id');">Activate</button>
-                                    }
-                                }
-                                <a class="btn btn-primary" href="/Management/Activity/Details/@Model[i - 1].ActivityId">Details</a>
                                 @if (@Model[i - 1].Activity.ActivityDate < DateTime.Now)
                                 {
 
                                 }
                                 else
                                 {
-                                    <a class="btn btn-warning" href="/Management/Activity/Edit/@Model[i - 1].Id">Edit</a>
+                                    if (@Model[i - 1].TicketStatus == true)
+                                    {
+                                        <button class="btn btn-warning" onclick="showQrCode('@Model[i - 1].Id');">Qr Code Show</button>
+                                    }
+                                    else
+                                    {
+
+                                    }
                                 }
                             </td>
                         </tr>
@@ -93,41 +88,55 @@
     </div>
 </div>
 
-
 @section ScriptSection {
     <script>
-        function DeactivateByJs(Id) {
-            var result = confirm("Are you sure you want to Deactivate?");
-            if (result) {
-                $.ajax({
-                    type: "POST",
-                    url: "/Management/Ticket/DeactivateByJs",
-                    data: { Id: Id },
-                    success: function (data) {
-                        alert(data);
-                        location.reload();
-                        window.location.href = '/Management/Ticket/Index';
-                    },
-                    error: function (data) {
-                        alert("Error: " + data);
-                    }
-                });
-            } else {
+        var openedPopups = [];
 
+        function showQrCode(id) {
+            for (var i = 0; i < openedPopups.length; i++) {
+                openedPopups[i].close();
             }
-        }
+            openedPopups = [];
 
-        function ActivateByJs(Id) {
-            var result = confirm("Are you sure you want to Activate?");
+            var qrCodeUrl = '/Ticket/QrCod?id=' + id;
+
+            var xhr = new XMLHttpRequest();
+            xhr.open('GET', qrCodeUrl, true);
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    var qrCodeImage = xhr.responseText;
+                    var width = 350;
+                    var height = 350;
+                    var left = (screen.width - width) / 2;
+                    var top = (screen.height - height) / 2;
+                    var popupWindow = window.open('', '_blank', 'width=' + width + ',height=' + height + ',left=' + left + ',top=' + top);
+                    if (popupWindow) {
+                        popupWindow.document.write(qrCodeImage);
+                        popupWindow.document.close();
+                        openedPopups.push(popupWindow);
+                    } else {
+                        alert('Popup window blocked. Please allow.');
+                    }
+                } else if (xhr.readyState === 4 && xhr.status !== 200) {
+                    alert('The QR code could not be captured. An error occurred.');
+                }
+            };
+            xhr.send();
+        }
+    </script>
+
+    <script>
+        function DeactivateByJs(Id) {
+            var result = confirm("Are you sure you want to cancel your ticket?");
             if (result) {
                 $.ajax({
                     type: "POST",
-                    url: "/Management/Ticket/ActivateByJs",
+                    url: "/Ticket/DeactivateByJs",
                     data: { Id: Id },
                     success: function (data) {
                         alert(data);
                         location.reload();
-                        window.location.href = '/Management/Ticket/Index';
+                        window.location.href = '/Ticket/MyTicket';
                     },
                     error: function (data) {
                         alert("Error: " + data);

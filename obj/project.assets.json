@@ -2529,6 +2529,19 @@
           "lib/netcoreapp3.1/Mono.TextTemplating.dll": {}
         }
       },
+      "Net.Codecrete.QrCodeGenerator/2.0.5": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/QrCodeGenerator.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/QrCodeGenerator.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "NETStandard.Library/1.6.1": {
         "type": "package",
         "dependencies": {
@@ -2717,13 +2730,16 @@
           "lib/netstandard2.0/NuGet.Versioning.dll": {}
         }
       },
-      "QRCoder/1.4.3": {
+      "QRCoder/1.4.1": {
         "type": "package",
+        "dependencies": {
+          "System.Drawing.Common": "4.7.0"
+        },
         "compile": {
-          "lib/net6.0/QRCoder.dll": {}
+          "lib/netstandard2.0/QRCoder.dll": {}
         },
         "runtime": {
-          "lib/net6.0/QRCoder.dll": {}
+          "lib/netstandard2.0/QRCoder.dll": {}
         }
       },
       "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
@@ -4565,6 +4581,19 @@
         },
         "runtime": {
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
+        }
+      },
+      "ZXing.Net/0.16.9": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0/zxing.dll": {
+            "related": ".XML"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/zxing.dll": {
+            "related": ".XML"
+          }
         }
       }
     }
@@ -8609,6 +8638,21 @@
         "readme.md"
       ]
     },
+    "Net.Codecrete.QrCodeGenerator/2.0.5": {
+      "sha512": "jH8i2g7liqxMVyY8WsNzJwMpwHqeWvGRl0f2GMW+C2CLT8vyIT72fdN+HfZeVFdDG0AMLxbvMPrpavXsL76LGQ==",
+      "type": "package",
+      "path": "net.codecrete.qrcodegenerator/2.0.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/netstandard2.0/QrCodeGenerator.dll",
+        "lib/netstandard2.0/QrCodeGenerator.xml",
+        "logo.png",
+        "net.codecrete.qrcodegenerator.2.0.5.nupkg.sha512",
+        "net.codecrete.qrcodegenerator.nuspec"
+      ]
+    },
     "NETStandard.Library/1.6.1": {
       "sha512": "WcSp3+vP+yHNgS8EV5J7pZ9IRpeDuARBPN28by8zqff1wJQXm26PVU8L3/fYLBJVU7BtDyqNVWq2KlCVvSSR4A==",
       "type": "package",
@@ -8806,24 +8850,18 @@
         "nuget.versioning.nuspec"
       ]
     },
-    "QRCoder/1.4.3": {
-      "sha512": "fWuFqjm8GTlEb2GqBl3Hi8HZZeZQwBSHxvRPtPjyNbT82H0ff0JwavKRBmMaXCno1Av6McPC8aJzri0Mj2w9Jw==",
+    "QRCoder/1.4.1": {
+      "sha512": "W8KwCwsOJe9SI7Cm7XeIMawd08F/US6xNw34lg2Qnx6m7GYYakxbyBQaNoW1Q75oJOmX/32sJUZr6Cix2B6GUQ==",
       "type": "package",
-      "path": "qrcoder/1.4.3",
+      "path": "qrcoder/1.4.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/net35/QRCoder.dll",
         "lib/net40/QRCoder.dll",
-        "lib/net5.0-windows7.0/QRCoder.dll",
-        "lib/net5.0/QRCoder.dll",
-        "lib/net6.0-windows7.0/QRCoder.dll",
-        "lib/net6.0/QRCoder.dll",
-        "lib/netstandard1.3/QRCoder.dll",
+        "lib/netstandard1.1/QRCoder.dll",
         "lib/netstandard2.0/QRCoder.dll",
-        "nuget-icon.png",
-        "nuget-readme.md",
-        "qrcoder.1.4.3.nupkg.sha512",
+        "qrcoder.1.4.1.nupkg.sha512",
         "qrcoder.nuspec"
       ]
     },
@@ -13294,6 +13332,89 @@
         "system.xml.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xdocument.nuspec"
       ]
+    },
+    "ZXing.Net/0.16.9": {
+      "sha512": "7WaVMHklpT3Ye2ragqRIwlFRsb6kOk63BOGADV0fan3ulVfGLUYkDi5yNUsZS/7FVNkWbtHAlDLmu4WnHGfqvQ==",
+      "type": "package",
+      "path": "zxing.net/0.16.9",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/native/zxing.XML",
+        "lib/native/zxing.pri",
+        "lib/native/zxing.winmd",
+        "lib/net20-cf/zxing.ce2.0.dll",
+        "lib/net20-cf/zxing.ce2.0.xml",
+        "lib/net20/zxing.XML",
+        "lib/net20/zxing.dll",
+        "lib/net35-cf/zxing.ce3.5.dll",
+        "lib/net35-cf/zxing.ce3.5.xml",
+        "lib/net35/zxing.XML",
+        "lib/net35/zxing.dll",
+        "lib/net40/zxing.XML",
+        "lib/net40/zxing.dll",
+        "lib/net40/zxing.presentation.XML",
+        "lib/net40/zxing.presentation.dll",
+        "lib/net45/zxing.XML",
+        "lib/net45/zxing.dll",
+        "lib/net45/zxing.presentation.XML",
+        "lib/net45/zxing.presentation.dll",
+        "lib/net461/zxing.XML",
+        "lib/net461/zxing.dll",
+        "lib/net461/zxing.presentation.XML",
+        "lib/net461/zxing.presentation.dll",
+        "lib/net47/zxing.XML",
+        "lib/net47/zxing.dll",
+        "lib/net47/zxing.presentation.XML",
+        "lib/net47/zxing.presentation.dll",
+        "lib/net48/zxing.XML",
+        "lib/net48/zxing.dll",
+        "lib/net48/zxing.presentation.XML",
+        "lib/net48/zxing.presentation.dll",
+        "lib/net5.0/zxing.XML",
+        "lib/net5.0/zxing.dll",
+        "lib/net6.0/zxing.XML",
+        "lib/net6.0/zxing.dll",
+        "lib/net7.0/zxing.XML",
+        "lib/net7.0/zxing.dll",
+        "lib/netcoreapp3.0/zxing.dll",
+        "lib/netcoreapp3.0/zxing.xml",
+        "lib/netcoreapp3.1/zxing.dll",
+        "lib/netcoreapp3.1/zxing.xml",
+        "lib/netstandard1.0/zxing.dll",
+        "lib/netstandard1.0/zxing.xml",
+        "lib/netstandard1.1/zxing.dll",
+        "lib/netstandard1.1/zxing.xml",
+        "lib/netstandard1.3/zxing.dll",
+        "lib/netstandard1.3/zxing.xml",
+        "lib/netstandard2.0/zxing.dll",
+        "lib/netstandard2.0/zxing.xml",
+        "lib/netstandard2.1/zxing.dll",
+        "lib/netstandard2.1/zxing.xml",
+        "lib/portable-win+net40+sl4+sl5+wp7+wp71+wp8/zxing.portable.XML",
+        "lib/portable-win+net40+sl4+sl5+wp7+wp71+wp8/zxing.portable.dll",
+        "lib/sl3-wp/zxing.wp7.0.XML",
+        "lib/sl3-wp/zxing.wp7.0.dll",
+        "lib/sl4-wp71/zxing.wp7.1.XML",
+        "lib/sl4-wp71/zxing.wp7.1.dll",
+        "lib/sl4/zxing.sl4.XML",
+        "lib/sl4/zxing.sl4.dll",
+        "lib/sl5/zxing.sl5.XML",
+        "lib/sl5/zxing.sl5.dll",
+        "lib/uap10/zxing.dll",
+        "lib/uap10/zxing.pri",
+        "lib/uap10/zxing.xml",
+        "lib/windows8-managed/zxing.winrt.XML",
+        "lib/windows8-managed/zxing.winrt.dll",
+        "lib/windows8/zxing.XML",
+        "lib/windows8/zxing.pri",
+        "lib/windows8/zxing.winmd",
+        "lib/wp8/zxing.wp8.0.XML",
+        "lib/wp8/zxing.wp8.0.dll",
+        "logo.jpg",
+        "zxing.net.0.16.9.nupkg.sha512",
+        "zxing.net.nuspec"
+      ]
     }
   },
   "projectFileDependencyGroups": {
@@ -13304,7 +13425,9 @@
       "Microsoft.EntityFrameworkCore.SqlServer >= 8.0.3",
       "Microsoft.EntityFrameworkCore.Tools >= 8.0.3",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 8.0.2",
-      "QRCoder >= 1.4.3"
+      "Net.Codecrete.QrCodeGenerator >= 2.0.5",
+      "QRCoder >= 1.4.1",
+      "ZXing.Net >= 0.16.9"
     ]
   },
   "packageFolders": {
@@ -13385,9 +13508,17 @@
             "target": "Package",
             "version": "[8.0.2, )"
           },
+          "Net.Codecrete.QrCodeGenerator": {
+            "target": "Package",
+            "version": "[2.0.5, )"
+          },
           "QRCoder": {
             "target": "Package",
-            "version": "[1.4.3, )"
+            "version": "[1.4.1, )"
+          },
+          "ZXing.Net": {
+            "target": "Package",
+            "version": "[0.16.9, )"
           }
         },
         "imports": [

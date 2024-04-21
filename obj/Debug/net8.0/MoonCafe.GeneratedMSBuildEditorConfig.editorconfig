@@ -130,8 +130,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlbWVudFxWaWV3c1xTaGFyZWRcX1N3aXRjaGVyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/emrullahkoc/Desktop/YAZILIM/MoonCafe/MoonCafe/Areas/Management/Views/Ticket/Camera.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlbWVudFxWaWV3c1xUaWNrZXRcQ2FtZXJhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/emrullahkoc/Desktop/YAZILIM/MoonCafe/MoonCafe/Areas/Management/Views/Ticket/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlbWVudFxWaWV3c1xUaWNrZXRcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/emrullahkoc/Desktop/YAZILIM/MoonCafe/MoonCafe/Areas/Management/Views/Ticket/TicketControl.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlbWVudFxWaWV3c1xUaWNrZXRcVGlja2V0Q29udHJvbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/emrullahkoc/Desktop/YAZILIM/MoonCafe/MoonCafe/Areas/Management/Views/User/Details.cshtml]
@@ -244,6 +252,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/emrullahkoc/Desktop/YAZILIM/MoonCafe/MoonCafe/Views/Ticket/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlja2V0XENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/emrullahkoc/Desktop/YAZILIM/MoonCafe/MoonCafe/Views/Ticket/MyTicket.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlja2V0XE15VGlja2V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/emrullahkoc/Desktop/YAZILIM/MoonCafe/MoonCafe/Views/_ViewImports.cshtml]
