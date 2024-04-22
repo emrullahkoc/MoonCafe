@@ -1,4 +1,5 @@
-﻿@model List<User>
+﻿@using System.Security.Claims
+@model List<User>
 
 @section CssSection {
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
@@ -32,39 +33,43 @@
                 <tbody>
                     @for (int i = 1; i <= Model.Count(); i++)
                     {
-                        <tr>
-                            <th scope="row" class="text-center">@i</th>
-                            <td class="text-center"><img class="rounded ml-3 shadow" src="@Model[i - 1].UserImageUrl" width="90" height="90" style="object-fit: cover" /></td>
-                            <td>@Model[i - 1].UserFullName</td>
-                            <td class="text-center">@Model[i - 1].UserEmail</td>
-                            <td class="text-center">@Model[i - 1].Role</td>
-                            <td class="text-center">@Model[i - 1].CreatedDate</td>
-                            <td class="text-center">@Model[i - 1].UpdateDate</td>
-                            <td class="text-center">
-                                @if (@Model[i - 1].UserStatus == true)
-                                {
-                                    <span class="badge" style="background-color: green; color: white;">Active</span>
-                                }
-                                else
-                                {
-                                    <span class="badge" style="background-color: red; color: white;">Passive</span>
-                                }
-                            </td>
-                            <td class="text-end">
-                                @if (@Model[i - 1].UserStatus == true)
-                                {
-                                    <button class="btn btn-danger" onclick="DeactivateByJs(@Model[i - 1].Id);">Deactivate</button>
-                                }
-                                else
-                                {
-                                    <button class="btn btn-success" onclick="ActivateByJs(@Model[i - 1].Id);">Activate</button>
-                                }
-                                <a class="btn btn-primary"
-                                   href="/Management/User/Details/@Model[i - 1].Id">Details</a>
-                                <a class="btn btn-warning"
-                                   href="/Management/User/Edit/@Model[i - 1].Id">Edit</a>
-                            </td>
-                        </tr>
+                        var currentUserId = User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.NameIdentifier)?.Value;
+                        if (currentUserId != null && currentUserId != Model[i - 1].Id.ToString())
+                        {
+                            <tr>
+                                <th scope="row" class="text-center">@i</th>
+                                <td class="text-center"><img class="rounded ml-3 shadow" src="@Model[i - 1].UserImageUrl" width="90" height="90" style="object-fit: cover" /></td>
+                                <td>@Model[i - 1].UserFullName</td>
+                                <td class="text-center">@Model[i - 1].UserEmail</td>
+                                <td class="text-center">@Model[i - 1].Role</td>
+                                <td class="text-center">@Model[i - 1].CreatedDate</td>
+                                <td class="text-center">@Model[i - 1].UpdateDate</td>
+                                <td class="text-center">
+                                    @if (@Model[i - 1].UserStatus == true)
+                                    {
+                                        <span class="badge" style="background-color: green; color: white;">Active</span>
+                                    }
+                                    else
+                                    {
+                                        <span class="badge" style="background-color: red; color: white;">Passive</span>
+                                    }
+                                </td>
+                                <td class="text-end">
+                                    @if (@Model[i - 1].UserStatus == true)
+                                    {
+                                        <button class="btn btn-danger" onclick="DeactivateByJs(@Model[i - 1].Id);">Deactivate</button>
+                                    }
+                                    else
+                                    {
+                                        <button class="btn btn-success" onclick="ActivateByJs(@Model[i - 1].Id);">Activate</button>
+                                    }
+                                    <a class="btn btn-primary"
+                                       href="/Management/User/Details/@Model[i - 1].Id">Details</a>
+                                    <a class="btn btn-warning"
+                                       href="/Management/User/Edit/@Model[i - 1].Id">Edit</a>
+                                </td>
+                            </tr>
+                        }
                     }
                 </tbody>
             </table>

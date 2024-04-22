@@ -46,7 +46,7 @@ namespace MoonCafe.Areas.Management.Controllers
                     await ImageUploader.DeleteImageAsync(_hostEnvironment, editmodel.UserImageUrl);
                     editmodel.UserImageUrl = await ImageUploader.UploadImageAsync(_hostEnvironment, img);
                 }
-                editmodel.UserFullName = model.UserFullName; ;
+                editmodel.UserFullName = model.UserFullName.ToUpper();
                 editmodel.Role = model.Role;
                 editmodel.UserEmail = model.UserEmail;
                 editmodel.UserPassword = model.UserPassword;
@@ -55,7 +55,7 @@ namespace MoonCafe.Areas.Management.Controllers
                 editmodel.UserStatus = true;
                 await db.SaveChangesAsync();
                 await HttpContext.SignOutAsync();
-                return Redirect("/Management/Home/Index");
+                return Redirect("/Account/Login");
             }
             return View(model);
         }

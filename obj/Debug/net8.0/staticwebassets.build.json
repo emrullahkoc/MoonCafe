@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "cfpIpHS7dOXV4B/q8Bcl15YJi+DF1l09LbBwi26W7Fc=",
+  "Hash": "cBPmiplw6mHD5164l371vlTNO23CAGqlszsOQlk69vc=",
   "Source": "MoonCafe",
   "BasePath": "_content/MoonCafe",
   "Mode": "Default",
@@ -359,6 +359,25 @@
       "OriginalItemSpec": "wwwroot\\ImageUpload\\goksel20240409015754.jpg"
     },
     {
+      "Identity": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\ImageUpload\\guide-120240422085733.jpg",
+      "SourceId": "MoonCafe",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\",
+      "BasePath": "_content/MoonCafe",
+      "RelativePath": "ImageUpload/guide-120240422085733.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\ImageUpload\\guide-120240422085733.jpg"
+    },
+    {
       "Identity": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\ImageUpload\\guide-220240410013126.jpg",
       "SourceId": "MoonCafe",
       "SourceType": "Discovered",
@@ -452,25 +471,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\ImageUpload\\klasik20240409033343.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\ImageUpload\\logo2.png",
-      "SourceId": "MoonCafe",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\",
-      "BasePath": "_content/MoonCafe",
-      "RelativePath": "ImageUpload/logo2.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\ImageUpload\\logo2.png"
     },
     {
       "Identity": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\ImageUpload\\metal20240409021254.jpg",

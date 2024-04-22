@@ -80,7 +80,7 @@ namespace MoonCafe.Areas.Management.Controllers
                 model.CreateDate = DateTime.Now;
                 db.Artists.Add(model);
                 db.SaveChanges();
-                return Redirect("/Management/Artist/Index");
+                return RedirectToAction(nameof(Index));
             }
             return View(model);
         }
@@ -91,7 +91,7 @@ namespace MoonCafe.Areas.Management.Controllers
             Artist? model = db.Artists.Find(id);
             if (model == null)
             {
-                return Redirect("/Management/Artist/Index");
+                return RedirectToAction(nameof(Index));
             }
             return View(model);
         }
@@ -104,7 +104,7 @@ namespace MoonCafe.Areas.Management.Controllers
                 Artist? editmodel = db.Artists.Find(model.Id);
                 if (editmodel == null)
                 {
-                    return Redirect("/Management/Artist/Index");
+                    return RedirectToAction(nameof(Index));
                 }
                 if (img != null)
                 {
@@ -117,7 +117,7 @@ namespace MoonCafe.Areas.Management.Controllers
                 editmodel.UpdateDate = DateTime.Now;
                 editmodel.ArtistStatus = true;
                 await db.SaveChangesAsync();
-                return Redirect("/Management/Artist/Index");
+                return RedirectToAction(nameof(Index));
             }
             return View(model);
         }
@@ -130,7 +130,7 @@ namespace MoonCafe.Areas.Management.Controllers
                 .FirstOrDefault(a => a.Id == id);
             if (model == null)
             {
-                return Redirect("/Management/Artist/Index");
+                return RedirectToAction(nameof(Index));
             }
             return View(model);
         }
