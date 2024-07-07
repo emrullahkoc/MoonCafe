@@ -1,4 +1,8 @@
-﻿<div class="container-fluid position-relative p-0">
+﻿@{
+    string activePage = ViewContext.RouteData.Values["Action"].ToString();
+}
+
+<div class="container-fluid position-relative p-0">
     <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
         <a asp-controller="Home" asp-action="Index" class="navbar-brand p-0">
             <h1 class="m-0"><img src="~/img/logo2.png" width="50" alt="MoonCafe"></i>&nbsp Moon Cafe</h1>
@@ -8,11 +12,11 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto py-0">
-                <a asp-controller="Home" asp-action="Index" class="nav-item nav-link link">Home</a>
-                <a asp-controller="Home" asp-action="Activities" class="nav-item nav-link link">Activities</a>
-                <a asp-controller="Home" asp-action="Artists" class="nav-item nav-link link">Artists</a>
-                <a asp-controller="Home" asp-action="About" class="nav-item nav-link">About</a>
-                <a asp-controller="Home" asp-action="Contact" class="nav-item nav-link">Contact</a>
+                <a asp-controller="Home" asp-action="Index" class="nav-item nav-link link @(activePage == "Index" ? "active" : "")">Home</a>
+                <a asp-controller="Home" asp-action="Activities" class="nav-item nav-link link @(activePage == "Activities" ? "active" : "")">Activities</a>
+                <a asp-controller="Home" asp-action="Artists" class="nav-item nav-link link @(activePage == "Artists" ? "active" : "")">Artists</a>
+                <a asp-controller="Home" asp-action="About" class="nav-item nav-link @(activePage == "About" ? "active" : "")">About</a>
+                <a asp-controller="Home" asp-action="Contact" class="nav-item nav-link @(activePage == "Contact" ? "active" : "")">Contact</a>
             </div>
         </div>
     </nav>

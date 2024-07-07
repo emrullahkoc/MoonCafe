@@ -1,775 +1,803 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\MoonCafe.bundle.scp.css",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\MoonCafe.bundle.scp.css",
       "PackagePath": "staticwebassets\\MoonCafe.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\ImageUpload\\CanBonomo20240409020127.jpg",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\ImageUpload\\12.jpeg",
+      "PackagePath": "staticwebassets\\ImageUpload\\12.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\ImageUpload\\13.jpg",
+      "PackagePath": "staticwebassets\\ImageUpload\\13.jpg"
+    },
+    {
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\ImageUpload\\14.jpg",
+      "PackagePath": "staticwebassets\\ImageUpload\\14.jpg"
+    },
+    {
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\ImageUpload\\15.jpg",
+      "PackagePath": "staticwebassets\\ImageUpload\\15.jpg"
+    },
+    {
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\ImageUpload\\16.jpeg",
+      "PackagePath": "staticwebassets\\ImageUpload\\16.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\ImageUpload\\17.jpg",
+      "PackagePath": "staticwebassets\\ImageUpload\\17.jpg"
+    },
+    {
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\ImageUpload\\CanBonomo20240409020127.jpg",
       "PackagePath": "staticwebassets\\ImageUpload\\CanBonomo20240409020127.jpg"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\ImageUpload\\atakan20240409020253.jpg",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\ImageUpload\\atakan20240409020253.jpg",
       "PackagePath": "staticwebassets\\ImageUpload\\atakan20240409020253.jpg"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\ImageUpload\\avatar-120240409052750.png",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\ImageUpload\\avatar-120240409052750.png",
       "PackagePath": "staticwebassets\\ImageUpload\\avatar-120240409052750.png"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\ImageUpload\\berkay20240409015906.jpg",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\ImageUpload\\berkay20240409015906.jpg",
       "PackagePath": "staticwebassets\\ImageUpload\\berkay20240409015906.jpg"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\ImageUpload\\blog-120240410011800.jpg",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\ImageUpload\\blog-120240410011800.jpg",
       "PackagePath": "staticwebassets\\ImageUpload\\blog-120240410011800.jpg"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\ImageUpload\\caz20240409021140.jpg",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\ImageUpload\\caz20240409021140.jpg",
       "PackagePath": "staticwebassets\\ImageUpload\\caz20240409021140.jpg"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\ImageUpload\\charlie-daniels20240409021044.jpg",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\ImageUpload\\charlie-daniels20240409021044.jpg",
       "PackagePath": "staticwebassets\\ImageUpload\\charlie-daniels20240409021044.jpg"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\ImageUpload\\destination-820240409110129.jpg",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\ImageUpload\\destination-820240409110129.jpg",
       "PackagePath": "staticwebassets\\ImageUpload\\destination-820240409110129.jpg"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\ImageUpload\\destination-920240410013638.jpg",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\ImageUpload\\destination-920240410013638.jpg",
       "PackagePath": "staticwebassets\\ImageUpload\\destination-920240410013638.jpg"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\ImageUpload\\destination-920240410013705.jpg",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\ImageUpload\\destination-920240410013705.jpg",
       "PackagePath": "staticwebassets\\ImageUpload\\destination-920240410013705.jpg"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\ImageUpload\\elektro20240409020952.jpg",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\ImageUpload\\elektro20240409020952.jpg",
       "PackagePath": "staticwebassets\\ImageUpload\\elektro20240409020952.jpg"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\ImageUpload\\ezhel20240409053455.jpg",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\ImageUpload\\ezhel20240409053455.jpg",
       "PackagePath": "staticwebassets\\ImageUpload\\ezhel20240409053455.jpg"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\ImageUpload\\fatma-turgut20240409020015.jpg",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\ImageUpload\\fatma-turgut20240409020015.jpg",
       "PackagePath": "staticwebassets\\ImageUpload\\fatma-turgut20240409020015.jpg"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\ImageUpload\\goksel20240409015754.jpg",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\ImageUpload\\goksel20240409015754.jpg",
       "PackagePath": "staticwebassets\\ImageUpload\\goksel20240409015754.jpg"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\ImageUpload\\guide-120240422085733.jpg",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\ImageUpload\\guide-120240422085733.jpg",
       "PackagePath": "staticwebassets\\ImageUpload\\guide-120240422085733.jpg"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\ImageUpload\\guide-220240410013126.jpg",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\ImageUpload\\guide-220240410013126.jpg",
       "PackagePath": "staticwebassets\\ImageUpload\\guide-220240410013126.jpg"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\ImageUpload\\istockphoto-1330424071-612x61220240409022210.jpg",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\ImageUpload\\istockphoto-1330424071-612x61220240409022210.jpg",
       "PackagePath": "staticwebassets\\ImageUpload\\istockphoto-1330424071-612x61220240409022210.jpg"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\ImageUpload\\klasik20240409020451.jpg",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\ImageUpload\\klasik20240409020451.jpg",
       "PackagePath": "staticwebassets\\ImageUpload\\klasik20240409020451.jpg"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\ImageUpload\\klasik20240409030236.jpg",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\ImageUpload\\klasik20240409030236.jpg",
       "PackagePath": "staticwebassets\\ImageUpload\\klasik20240409030236.jpg"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\ImageUpload\\klasik20240409033343.jpg",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\ImageUpload\\klasik20240409033343.jpg",
       "PackagePath": "staticwebassets\\ImageUpload\\klasik20240409033343.jpg"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\ImageUpload\\metal20240409021254.jpg",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\ImageUpload\\logo2.png",
+      "PackagePath": "staticwebassets\\ImageUpload\\logo2.png"
+    },
+    {
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\ImageUpload\\metal20240409021254.jpg",
       "PackagePath": "staticwebassets\\ImageUpload\\metal20240409021254.jpg"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\ImageUpload\\metal20240409022454.webp",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\ImageUpload\\metal20240409022454.webp",
       "PackagePath": "staticwebassets\\ImageUpload\\metal20240409022454.webp"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\ImageUpload\\pop20240409020640.jpg",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\ImageUpload\\pop20240409020640.jpg",
       "PackagePath": "staticwebassets\\ImageUpload\\pop20240409020640.jpg"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\ImageUpload\\rap20240409020848.jpg",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\ImageUpload\\rap20240409020848.jpg",
       "PackagePath": "staticwebassets\\ImageUpload\\rap20240409020848.jpg"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\ImageUpload\\rock20240409020753.png",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\ImageUpload\\rock20240409020753.png",
       "PackagePath": "staticwebassets\\ImageUpload\\rock20240409020753.png"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\ImageUpload\\teoman20240410034010.jpg",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\ImageUpload\\teoman20240410034010.jpg",
       "PackagePath": "staticwebassets\\ImageUpload\\teoman20240410034010.jpg"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\ImageUpload\\testimonial-220240421093227.jpg",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\ImageUpload\\testimonial-220240421093227.jpg",
       "PackagePath": "staticwebassets\\ImageUpload\\testimonial-220240421093227.jpg"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\ImageUpload\\testimonial-420240410082502.jpg",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\ImageUpload\\testimonial-420240410082502.jpg",
       "PackagePath": "staticwebassets\\ImageUpload\\testimonial-420240410082502.jpg"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\ImageUpload\\turkiye-genclik-filarmoni-408_2-4120240409022944.webp",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\ImageUpload\\turkiye-genclik-filarmoni-408_2-4120240409022944.webp",
       "PackagePath": "staticwebassets\\ImageUpload\\turkiye-genclik-filarmoni-408_2-4120240409022944.webp"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\css\\bootstrap.min.css",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\css\\style.css",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\css\\style.css",
       "PackagePath": "staticwebassets\\css\\style.css"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\img\\about-img-1.png",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\img\\about-img-1.png",
       "PackagePath": "staticwebassets\\img\\about-img-1.png"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\img\\about-img.jpg",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\img\\about-img.jpg",
       "PackagePath": "staticwebassets\\img\\about-img.jpg"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\img\\blog-1.jpg",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\img\\blog-1.jpg",
       "PackagePath": "staticwebassets\\img\\blog-1.jpg"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\img\\blog-2.jpg",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\img\\blog-2.jpg",
       "PackagePath": "staticwebassets\\img\\blog-2.jpg"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\img\\blog-3.jpg",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\img\\blog-3.jpg",
       "PackagePath": "staticwebassets\\img\\blog-3.jpg"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\img\\breadcrumb-bg.jpg",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\img\\breadcrumb-bg.jpg",
       "PackagePath": "staticwebassets\\img\\breadcrumb-bg.jpg"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\img\\carousel-1.jpg",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\img\\carousel-1.jpg",
       "PackagePath": "staticwebassets\\img\\carousel-1.jpg"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\img\\carousel-2.jpg",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\img\\carousel-2.jpg",
       "PackagePath": "staticwebassets\\img\\carousel-2.jpg"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\img\\carousel-3.jpg",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\img\\carousel-3.jpg",
       "PackagePath": "staticwebassets\\img\\carousel-3.jpg"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\img\\countdown-bg.jpg",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\img\\countdown-bg.jpg",
       "PackagePath": "staticwebassets\\img\\countdown-bg.jpg"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\img\\destination-1.jpg",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\img\\destination-1.jpg",
       "PackagePath": "staticwebassets\\img\\destination-1.jpg"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\img\\destination-2.jpg",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\img\\destination-2.jpg",
       "PackagePath": "staticwebassets\\img\\destination-2.jpg"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\img\\destination-3.jpg",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\img\\destination-3.jpg",
       "PackagePath": "staticwebassets\\img\\destination-3.jpg"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\img\\destination-4.jpg",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\img\\destination-4.jpg",
       "PackagePath": "staticwebassets\\img\\destination-4.jpg"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\img\\destination-5.jpg",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\img\\destination-5.jpg",
       "PackagePath": "staticwebassets\\img\\destination-5.jpg"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\img\\destination-6.jpg",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\img\\destination-6.jpg",
       "PackagePath": "staticwebassets\\img\\destination-6.jpg"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\img\\destination-7.jpg",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\img\\destination-7.jpg",
       "PackagePath": "staticwebassets\\img\\destination-7.jpg"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\img\\destination-8.jpg",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\img\\destination-8.jpg",
       "PackagePath": "staticwebassets\\img\\destination-8.jpg"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\img\\destination-9.jpg",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\img\\destination-9.jpg",
       "PackagePath": "staticwebassets\\img\\destination-9.jpg"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\img\\explore-tour-1.jpg",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\img\\explore-tour-1.jpg",
       "PackagePath": "staticwebassets\\img\\explore-tour-1.jpg"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\img\\explore-tour-2.jpg",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\img\\explore-tour-2.jpg",
       "PackagePath": "staticwebassets\\img\\explore-tour-2.jpg"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\img\\explore-tour-3.jpg",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\img\\explore-tour-3.jpg",
       "PackagePath": "staticwebassets\\img\\explore-tour-3.jpg"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\img\\explore-tour-4.jpg",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\img\\explore-tour-4.jpg",
       "PackagePath": "staticwebassets\\img\\explore-tour-4.jpg"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\img\\explore-tour-5.jpg",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\img\\explore-tour-5.jpg",
       "PackagePath": "staticwebassets\\img\\explore-tour-5.jpg"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\img\\explore-tour-6.jpg",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\img\\explore-tour-6.jpg",
       "PackagePath": "staticwebassets\\img\\explore-tour-6.jpg"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\img\\gallery-1.jpg",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\img\\gallery-1.jpg",
       "PackagePath": "staticwebassets\\img\\gallery-1.jpg"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\img\\gallery-10.jpg",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\img\\gallery-10.jpg",
       "PackagePath": "staticwebassets\\img\\gallery-10.jpg"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\img\\gallery-11.jpg",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\img\\gallery-11.jpg",
       "PackagePath": "staticwebassets\\img\\gallery-11.jpg"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\img\\gallery-12.jpg",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\img\\gallery-12.jpg",
       "PackagePath": "staticwebassets\\img\\gallery-12.jpg"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\img\\gallery-2.jpg",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\img\\gallery-2.jpg",
       "PackagePath": "staticwebassets\\img\\gallery-2.jpg"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\img\\gallery-3.jpg",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\img\\gallery-3.jpg",
       "PackagePath": "staticwebassets\\img\\gallery-3.jpg"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\img\\gallery-4.jpg",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\img\\gallery-4.jpg",
       "PackagePath": "staticwebassets\\img\\gallery-4.jpg"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\img\\gallery-5.jpg",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\img\\gallery-5.jpg",
       "PackagePath": "staticwebassets\\img\\gallery-5.jpg"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\img\\gallery-6.jpg",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\img\\gallery-6.jpg",
       "PackagePath": "staticwebassets\\img\\gallery-6.jpg"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\img\\gallery-7.jpg",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\img\\gallery-7.jpg",
       "PackagePath": "staticwebassets\\img\\gallery-7.jpg"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\img\\gallery-8.jpg",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\img\\gallery-8.jpg",
       "PackagePath": "staticwebassets\\img\\gallery-8.jpg"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\img\\gallery-9.jpg",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\img\\gallery-9.jpg",
       "PackagePath": "staticwebassets\\img\\gallery-9.jpg"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\img\\guide-1.jpg",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\img\\guide-1.jpg",
       "PackagePath": "staticwebassets\\img\\guide-1.jpg"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\img\\guide-2.jpg",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\img\\guide-2.jpg",
       "PackagePath": "staticwebassets\\img\\guide-2.jpg"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\img\\guide-3.jpg",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\img\\guide-3.jpg",
       "PackagePath": "staticwebassets\\img\\guide-3.jpg"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\img\\guide-4.jpg",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\img\\guide-4.jpg",
       "PackagePath": "staticwebassets\\img\\guide-4.jpg"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\img\\hero-bg.png",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\img\\hero-bg.png",
       "PackagePath": "staticwebassets\\img\\hero-bg.png"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\img\\hero-bg2.png",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\img\\hero-bg2.png",
       "PackagePath": "staticwebassets\\img\\hero-bg2.png"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\img\\logo.png",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\img\\logo.png",
       "PackagePath": "staticwebassets\\img\\logo.png"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\img\\logo2.png",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\img\\logo2.png",
       "PackagePath": "staticwebassets\\img\\logo2.png"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\img\\packages-1.jpg",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\img\\packages-1.jpg",
       "PackagePath": "staticwebassets\\img\\packages-1.jpg"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\img\\packages-2.jpg",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\img\\packages-2.jpg",
       "PackagePath": "staticwebassets\\img\\packages-2.jpg"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\img\\packages-3.jpg",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\img\\packages-3.jpg",
       "PackagePath": "staticwebassets\\img\\packages-3.jpg"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\img\\packages-4.jpg",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\img\\packages-4.jpg",
       "PackagePath": "staticwebassets\\img\\packages-4.jpg"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\img\\subscribe-img.jpg",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\img\\subscribe-img.jpg",
       "PackagePath": "staticwebassets\\img\\subscribe-img.jpg"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\img\\testimonial-1.jpg",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\img\\testimonial-1.jpg",
       "PackagePath": "staticwebassets\\img\\testimonial-1.jpg"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\img\\testimonial-2.jpg",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\img\\testimonial-2.jpg",
       "PackagePath": "staticwebassets\\img\\testimonial-2.jpg"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\img\\testimonial-3.jpg",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\img\\testimonial-3.jpg",
       "PackagePath": "staticwebassets\\img\\testimonial-3.jpg"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\img\\testimonial-4.jpg",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\img\\testimonial-4.jpg",
       "PackagePath": "staticwebassets\\img\\testimonial-4.jpg"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\img\\tour-booking-bg.jpg",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\img\\tour-booking-bg.jpg",
       "PackagePath": "staticwebassets\\img\\tour-booking-bg.jpg"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\js\\main.js",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\js\\main.js",
       "PackagePath": "staticwebassets\\js\\main.js"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\lib\\easing\\easing.js",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\lib\\easing\\easing.js",
       "PackagePath": "staticwebassets\\lib\\easing\\easing.js"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\lib\\easing\\easing.min.js",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\lib\\easing\\easing.min.js",
       "PackagePath": "staticwebassets\\lib\\easing\\easing.min.js"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\lib\\lightbox\\css\\lightbox.min.css",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\lib\\lightbox\\css\\lightbox.min.css",
       "PackagePath": "staticwebassets\\lib\\lightbox\\css\\lightbox.min.css"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\lib\\lightbox\\images\\close.png",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\lib\\lightbox\\images\\close.png",
       "PackagePath": "staticwebassets\\lib\\lightbox\\images\\close.png"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\lib\\lightbox\\images\\loading.gif",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\lib\\lightbox\\images\\loading.gif",
       "PackagePath": "staticwebassets\\lib\\lightbox\\images\\loading.gif"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\lib\\lightbox\\images\\next.png",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\lib\\lightbox\\images\\next.png",
       "PackagePath": "staticwebassets\\lib\\lightbox\\images\\next.png"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\lib\\lightbox\\images\\prev.png",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\lib\\lightbox\\images\\prev.png",
       "PackagePath": "staticwebassets\\lib\\lightbox\\images\\prev.png"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\lib\\lightbox\\js\\lightbox.min.js",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\lib\\lightbox\\js\\lightbox.min.js",
       "PackagePath": "staticwebassets\\lib\\lightbox\\js\\lightbox.min.js"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\lib\\owlcarousel\\LICENSE",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\lib\\owlcarousel\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\owlcarousel"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\lib\\owlcarousel\\assets\\ajax-loader.gif",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\lib\\owlcarousel\\assets\\ajax-loader.gif",
       "PackagePath": "staticwebassets\\lib\\owlcarousel\\assets\\ajax-loader.gif"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\lib\\owlcarousel\\assets\\owl.carousel.css",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\lib\\owlcarousel\\assets\\owl.carousel.css",
       "PackagePath": "staticwebassets\\lib\\owlcarousel\\assets\\owl.carousel.css"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\lib\\owlcarousel\\assets\\owl.carousel.min.css",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\lib\\owlcarousel\\assets\\owl.carousel.min.css",
       "PackagePath": "staticwebassets\\lib\\owlcarousel\\assets\\owl.carousel.min.css"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\lib\\owlcarousel\\assets\\owl.theme.default.css",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\lib\\owlcarousel\\assets\\owl.theme.default.css",
       "PackagePath": "staticwebassets\\lib\\owlcarousel\\assets\\owl.theme.default.css"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\lib\\owlcarousel\\assets\\owl.theme.default.min.css",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\lib\\owlcarousel\\assets\\owl.theme.default.min.css",
       "PackagePath": "staticwebassets\\lib\\owlcarousel\\assets\\owl.theme.default.min.css"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\lib\\owlcarousel\\assets\\owl.theme.green.css",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\lib\\owlcarousel\\assets\\owl.theme.green.css",
       "PackagePath": "staticwebassets\\lib\\owlcarousel\\assets\\owl.theme.green.css"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\lib\\owlcarousel\\assets\\owl.theme.green.min.css",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\lib\\owlcarousel\\assets\\owl.theme.green.min.css",
       "PackagePath": "staticwebassets\\lib\\owlcarousel\\assets\\owl.theme.green.min.css"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\lib\\owlcarousel\\assets\\owl.video.play.png",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\lib\\owlcarousel\\assets\\owl.video.play.png",
       "PackagePath": "staticwebassets\\lib\\owlcarousel\\assets\\owl.video.play.png"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\lib\\owlcarousel\\owl.carousel.js",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\lib\\owlcarousel\\owl.carousel.js",
       "PackagePath": "staticwebassets\\lib\\owlcarousel\\owl.carousel.js"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\lib\\owlcarousel\\owl.carousel.min.js",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\lib\\owlcarousel\\owl.carousel.min.js",
       "PackagePath": "staticwebassets\\lib\\owlcarousel\\owl.carousel.min.js"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\lib\\waypoints\\links.php",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\lib\\waypoints\\links.php",
       "PackagePath": "staticwebassets\\lib\\waypoints\\links.php"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\lib\\waypoints\\waypoints.min.js",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\lib\\waypoints\\waypoints.min.js",
       "PackagePath": "staticwebassets\\lib\\waypoints\\waypoints.min.js"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\script.js",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\script.js",
       "PackagePath": "staticwebassets\\script.js"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap.scss",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap.scss"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\_accordion.scss",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\_accordion.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\scss\\_accordion.scss"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\_alert.scss",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\_alert.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\scss\\_alert.scss"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\_badge.scss",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\_badge.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\scss\\_badge.scss"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\_breadcrumb.scss",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\_breadcrumb.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\scss\\_breadcrumb.scss"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\_button-group.scss",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\_button-group.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\scss\\_button-group.scss"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\_buttons.scss",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\_buttons.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\scss\\_buttons.scss"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\_card.scss",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\_card.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\scss\\_card.scss"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\_carousel.scss",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\_carousel.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\scss\\_carousel.scss"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\_close.scss",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\_close.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\scss\\_close.scss"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\_containers.scss",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\_containers.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\scss\\_containers.scss"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\_dropdown.scss",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\_dropdown.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\scss\\_dropdown.scss"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\_forms.scss",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\_forms.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\scss\\_forms.scss"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\_functions.scss",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\_functions.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\scss\\_functions.scss"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\_grid.scss",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\_grid.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\scss\\_grid.scss"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\_helpers.scss",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\_helpers.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\scss\\_helpers.scss"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\_images.scss",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\_images.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\scss\\_images.scss"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\_list-group.scss",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\_list-group.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\scss\\_list-group.scss"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\_mixins.scss",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\_mixins.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\scss\\_mixins.scss"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\_modal.scss",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\_modal.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\scss\\_modal.scss"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\_nav.scss",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\_nav.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\scss\\_nav.scss"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\_navbar.scss",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\_navbar.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\scss\\_navbar.scss"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\_offcanvas.scss",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\_offcanvas.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\scss\\_offcanvas.scss"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\_pagination.scss",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\_pagination.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\scss\\_pagination.scss"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\_popover.scss",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\_popover.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\scss\\_popover.scss"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\_progress.scss",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\_progress.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\scss\\_progress.scss"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\_reboot.scss",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\_reboot.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\scss\\_reboot.scss"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\_root.scss",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\_root.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\scss\\_root.scss"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\_spinners.scss",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\_spinners.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\scss\\_spinners.scss"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\_tables.scss",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\_tables.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\scss\\_tables.scss"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\_toasts.scss",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\_toasts.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\scss\\_toasts.scss"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\_tooltip.scss",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\_tooltip.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\scss\\_tooltip.scss"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\_transitions.scss",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\_transitions.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\scss\\_transitions.scss"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\_type.scss",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\_type.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\scss\\_type.scss"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\_utilities.scss",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\_utilities.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\scss\\_utilities.scss"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\_variables.scss",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\_variables.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\scss\\_variables.scss"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\bootstrap-grid.scss",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\bootstrap-grid.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\scss\\bootstrap-grid.scss"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\bootstrap-reboot.scss",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\bootstrap-reboot.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\scss\\bootstrap-reboot.scss"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\bootstrap-utilities.scss",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\bootstrap-utilities.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\scss\\bootstrap-utilities.scss"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\bootstrap.scss",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\bootstrap.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\scss\\bootstrap.scss"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\forms\\_floating-labels.scss",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\forms\\_floating-labels.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\scss\\forms\\_floating-labels.scss"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\forms\\_form-check.scss",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\forms\\_form-check.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\scss\\forms\\_form-check.scss"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\forms\\_form-control.scss",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\forms\\_form-control.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\scss\\forms\\_form-control.scss"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\forms\\_form-range.scss",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\forms\\_form-range.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\scss\\forms\\_form-range.scss"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\forms\\_form-select.scss",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\forms\\_form-select.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\scss\\forms\\_form-select.scss"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\forms\\_form-text.scss",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\forms\\_form-text.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\scss\\forms\\_form-text.scss"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\forms\\_input-group.scss",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\forms\\_input-group.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\scss\\forms\\_input-group.scss"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\forms\\_labels.scss",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\forms\\_labels.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\scss\\forms\\_labels.scss"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\forms\\_validation.scss",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\forms\\_validation.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\scss\\forms\\_validation.scss"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\helpers\\_clearfix.scss",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\helpers\\_clearfix.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\scss\\helpers\\_clearfix.scss"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\helpers\\_colored-links.scss",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\helpers\\_colored-links.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\scss\\helpers\\_colored-links.scss"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\helpers\\_position.scss",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\helpers\\_position.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\scss\\helpers\\_position.scss"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\helpers\\_ratio.scss",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\helpers\\_ratio.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\scss\\helpers\\_ratio.scss"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\helpers\\_stretched-link.scss",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\helpers\\_stretched-link.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\scss\\helpers\\_stretched-link.scss"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\helpers\\_text-truncation.scss",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\helpers\\_text-truncation.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\scss\\helpers\\_text-truncation.scss"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\helpers\\_visually-hidden.scss",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\helpers\\_visually-hidden.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\scss\\helpers\\_visually-hidden.scss"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\mixins\\_alert.scss",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\mixins\\_alert.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\scss\\mixins\\_alert.scss"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\mixins\\_border-radius.scss",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\mixins\\_border-radius.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\scss\\mixins\\_border-radius.scss"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\mixins\\_box-shadow.scss",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\mixins\\_box-shadow.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\scss\\mixins\\_box-shadow.scss"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\mixins\\_breakpoints.scss",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\mixins\\_breakpoints.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\scss\\mixins\\_breakpoints.scss"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\mixins\\_buttons.scss",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\mixins\\_buttons.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\scss\\mixins\\_buttons.scss"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\mixins\\_caret.scss",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\mixins\\_caret.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\scss\\mixins\\_caret.scss"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\mixins\\_clearfix.scss",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\mixins\\_clearfix.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\scss\\mixins\\_clearfix.scss"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\mixins\\_color-scheme.scss",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\mixins\\_color-scheme.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\scss\\mixins\\_color-scheme.scss"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\mixins\\_container.scss",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\mixins\\_container.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\scss\\mixins\\_container.scss"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\mixins\\_deprecate.scss",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\mixins\\_deprecate.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\scss\\mixins\\_deprecate.scss"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\mixins\\_forms.scss",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\mixins\\_forms.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\scss\\mixins\\_forms.scss"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\mixins\\_gradients.scss",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\mixins\\_gradients.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\scss\\mixins\\_gradients.scss"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\mixins\\_grid.scss",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\mixins\\_grid.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\scss\\mixins\\_grid.scss"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\mixins\\_image.scss",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\mixins\\_image.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\scss\\mixins\\_image.scss"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\mixins\\_list-group.scss",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\mixins\\_list-group.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\scss\\mixins\\_list-group.scss"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\mixins\\_lists.scss",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\mixins\\_lists.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\scss\\mixins\\_lists.scss"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\mixins\\_pagination.scss",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\mixins\\_pagination.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\scss\\mixins\\_pagination.scss"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\mixins\\_reset-text.scss",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\mixins\\_reset-text.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\scss\\mixins\\_reset-text.scss"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\mixins\\_resize.scss",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\mixins\\_resize.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\scss\\mixins\\_resize.scss"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\mixins\\_table-variants.scss",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\mixins\\_table-variants.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\scss\\mixins\\_table-variants.scss"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\mixins\\_text-truncate.scss",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\mixins\\_text-truncate.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\scss\\mixins\\_text-truncate.scss"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\mixins\\_transition.scss",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\mixins\\_transition.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\scss\\mixins\\_transition.scss"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\mixins\\_utilities.scss",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\mixins\\_utilities.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\scss\\mixins\\_utilities.scss"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\mixins\\_visually-hidden.scss",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\mixins\\_visually-hidden.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\scss\\mixins\\_visually-hidden.scss"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\utilities\\_api.scss",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\utilities\\_api.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\scss\\utilities\\_api.scss"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\vendor\\_rfs.scss",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\scss\\bootstrap\\scss\\vendor\\_rfs.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\scss\\vendor\\_rfs.scss"
     },
     {
-      "Id": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\wwwroot\\style.css",
+      "Id": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\wwwroot\\style.css",
       "PackagePath": "staticwebassets\\style.css"
     },
     {

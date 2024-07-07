@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\MoonCafe.csproj": {}
+    "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\MoonCafe.csproj": {}
   },
   "projects": {
-    "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\MoonCafe.csproj": {
+    "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\MoonCafe.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\MoonCafe.csproj",
+        "projectUniqueName": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\MoonCafe.csproj",
         "projectName": "MoonCafe",
-        "projectPath": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\MoonCafe.csproj",
+        "projectPath": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\MoonCafe.csproj",
         "packagesPath": "C:\\Users\\emrullahkoc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\obj\\",
+        "outputPath": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -110,7 +110,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
