@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/m+15qH6B2k=",
+  "dgSpecHash": "jcyex6m8Etk=",
   "success": true,
-  "projectFilePath": "C:\\Users\\emrullahkoc\\Desktop\\MoonCafe\\MoonCafe\\MoonCafe.csproj",
+  "projectFilePath": "C:\\Users\\emrullahkoc\\Desktop\\YAZILIM\\MoonCafe\\MoonCafe\\MoonCafe.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\emrullahkoc\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\emrullahkoc\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
@@ -270,12 +270,5 @@
     "C:\\Users\\emrullahkoc\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
     "C:\\Users\\emrullahkoc\\.nuget\\packages\\zxing.net\\0.16.9\\zxing.net.0.16.9.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1900",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json."
-    }
-  ]
+  "logs": []
 }

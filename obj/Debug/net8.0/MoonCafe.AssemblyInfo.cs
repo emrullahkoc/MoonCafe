@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MoonCafe")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f0e80e88784faf7eb7817e57f32e99da2abd1c1a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cac77f0f7e9e573ddcc9fcaad816bc8dbc1f7d79")]
 [assembly: System.Reflection.AssemblyProductAttribute("MoonCafe")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MoonCafe")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

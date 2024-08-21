@@ -17,263 +17,263 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = MoonCafe
 build_property.RootNamespace = MoonCafe
-build_property.ProjectDir = C:\Users\emrullahkoc\Desktop\MoonCafe\MoonCafe\
+build_property.ProjectDir = C:\Users\emrullahkoc\Desktop\YAZILIM\MoonCafe\MoonCafe\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\emrullahkoc\Desktop\MoonCafe\MoonCafe
+build_property.MSBuildProjectDirectory = C:\Users\emrullahkoc\Desktop\YAZILIM\MoonCafe\MoonCafe
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/emrullahkoc/Desktop/MoonCafe/MoonCafe/Areas/Management/Views/About/Edit.cshtml]
+[C:/Users/emrullahkoc/Desktop/YAZILIM/MoonCafe/MoonCafe/Areas/Management/Views/About/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlbWVudFxWaWV3c1xBYm91dFxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/emrullahkoc/Desktop/MoonCafe/MoonCafe/Areas/Management/Views/Activity/Create.cshtml]
+[C:/Users/emrullahkoc/Desktop/YAZILIM/MoonCafe/MoonCafe/Areas/Management/Views/Activity/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlbWVudFxWaWV3c1xBY3Rpdml0eVxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/emrullahkoc/Desktop/MoonCafe/MoonCafe/Areas/Management/Views/Activity/Details.cshtml]
+[C:/Users/emrullahkoc/Desktop/YAZILIM/MoonCafe/MoonCafe/Areas/Management/Views/Activity/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlbWVudFxWaWV3c1xBY3Rpdml0eVxEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/emrullahkoc/Desktop/MoonCafe/MoonCafe/Areas/Management/Views/Activity/Edit.cshtml]
+[C:/Users/emrullahkoc/Desktop/YAZILIM/MoonCafe/MoonCafe/Areas/Management/Views/Activity/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlbWVudFxWaWV3c1xBY3Rpdml0eVxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/emrullahkoc/Desktop/MoonCafe/MoonCafe/Areas/Management/Views/Activity/Index.cshtml]
+[C:/Users/emrullahkoc/Desktop/YAZILIM/MoonCafe/MoonCafe/Areas/Management/Views/Activity/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlbWVudFxWaWV3c1xBY3Rpdml0eVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/emrullahkoc/Desktop/MoonCafe/MoonCafe/Areas/Management/Views/Artist/Create.cshtml]
+[C:/Users/emrullahkoc/Desktop/YAZILIM/MoonCafe/MoonCafe/Areas/Management/Views/Artist/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlbWVudFxWaWV3c1xBcnRpc3RcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/emrullahkoc/Desktop/MoonCafe/MoonCafe/Areas/Management/Views/Artist/Details.cshtml]
+[C:/Users/emrullahkoc/Desktop/YAZILIM/MoonCafe/MoonCafe/Areas/Management/Views/Artist/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlbWVudFxWaWV3c1xBcnRpc3RcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/emrullahkoc/Desktop/MoonCafe/MoonCafe/Areas/Management/Views/Artist/Edit.cshtml]
+[C:/Users/emrullahkoc/Desktop/YAZILIM/MoonCafe/MoonCafe/Areas/Management/Views/Artist/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlbWVudFxWaWV3c1xBcnRpc3RcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/emrullahkoc/Desktop/MoonCafe/MoonCafe/Areas/Management/Views/Artist/Index.cshtml]
+[C:/Users/emrullahkoc/Desktop/YAZILIM/MoonCafe/MoonCafe/Areas/Management/Views/Artist/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlbWVudFxWaWV3c1xBcnRpc3RcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/emrullahkoc/Desktop/MoonCafe/MoonCafe/Areas/Management/Views/Category/Create.cshtml]
+[C:/Users/emrullahkoc/Desktop/YAZILIM/MoonCafe/MoonCafe/Areas/Management/Views/Category/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlbWVudFxWaWV3c1xDYXRlZ29yeVxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/emrullahkoc/Desktop/MoonCafe/MoonCafe/Areas/Management/Views/Category/Details.cshtml]
+[C:/Users/emrullahkoc/Desktop/YAZILIM/MoonCafe/MoonCafe/Areas/Management/Views/Category/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlbWVudFxWaWV3c1xDYXRlZ29yeVxEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/emrullahkoc/Desktop/MoonCafe/MoonCafe/Areas/Management/Views/Category/Edit.cshtml]
+[C:/Users/emrullahkoc/Desktop/YAZILIM/MoonCafe/MoonCafe/Areas/Management/Views/Category/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlbWVudFxWaWV3c1xDYXRlZ29yeVxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/emrullahkoc/Desktop/MoonCafe/MoonCafe/Areas/Management/Views/Category/Index.cshtml]
+[C:/Users/emrullahkoc/Desktop/YAZILIM/MoonCafe/MoonCafe/Areas/Management/Views/Category/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlbWVudFxWaWV3c1xDYXRlZ29yeVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/emrullahkoc/Desktop/MoonCafe/MoonCafe/Areas/Management/Views/Contact/Details.cshtml]
+[C:/Users/emrullahkoc/Desktop/YAZILIM/MoonCafe/MoonCafe/Areas/Management/Views/Contact/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlbWVudFxWaWV3c1xDb250YWN0XERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/emrullahkoc/Desktop/MoonCafe/MoonCafe/Areas/Management/Views/Contact/Index.cshtml]
+[C:/Users/emrullahkoc/Desktop/YAZILIM/MoonCafe/MoonCafe/Areas/Management/Views/Contact/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlbWVudFxWaWV3c1xDb250YWN0XEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/emrullahkoc/Desktop/MoonCafe/MoonCafe/Areas/Management/Views/Home/Index.cshtml]
+[C:/Users/emrullahkoc/Desktop/YAZILIM/MoonCafe/MoonCafe/Areas/Management/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlbWVudFxWaWV3c1xIb21lXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/emrullahkoc/Desktop/MoonCafe/MoonCafe/Areas/Management/Views/MainPage/Edit.cshtml]
+[C:/Users/emrullahkoc/Desktop/YAZILIM/MoonCafe/MoonCafe/Areas/Management/Views/MainPage/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlbWVudFxWaWV3c1xNYWluUGFnZVxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/emrullahkoc/Desktop/MoonCafe/MoonCafe/Areas/Management/Views/Setting/Edit.cshtml]
+[C:/Users/emrullahkoc/Desktop/YAZILIM/MoonCafe/MoonCafe/Areas/Management/Views/Setting/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlbWVudFxWaWV3c1xTZXR0aW5nXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/emrullahkoc/Desktop/MoonCafe/MoonCafe/Areas/Management/Views/Shared/_Footer.cshtml]
+[C:/Users/emrullahkoc/Desktop/YAZILIM/MoonCafe/MoonCafe/Areas/Management/Views/Shared/_Footer.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlbWVudFxWaWV3c1xTaGFyZWRcX0Zvb3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/emrullahkoc/Desktop/MoonCafe/MoonCafe/Areas/Management/Views/Shared/_Head.cshtml]
+[C:/Users/emrullahkoc/Desktop/YAZILIM/MoonCafe/MoonCafe/Areas/Management/Views/Shared/_Head.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlbWVudFxWaWV3c1xTaGFyZWRcX0hlYWQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/emrullahkoc/Desktop/MoonCafe/MoonCafe/Areas/Management/Views/Shared/_Header.cshtml]
+[C:/Users/emrullahkoc/Desktop/YAZILIM/MoonCafe/MoonCafe/Areas/Management/Views/Shared/_Header.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlbWVudFxWaWV3c1xTaGFyZWRcX0hlYWRlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/emrullahkoc/Desktop/MoonCafe/MoonCafe/Areas/Management/Views/Shared/_Mobile.cshtml]
+[C:/Users/emrullahkoc/Desktop/YAZILIM/MoonCafe/MoonCafe/Areas/Management/Views/Shared/_Mobile.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlbWVudFxWaWV3c1xTaGFyZWRcX01vYmlsZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/emrullahkoc/Desktop/MoonCafe/MoonCafe/Areas/Management/Views/Shared/_Navigation.cshtml]
+[C:/Users/emrullahkoc/Desktop/YAZILIM/MoonCafe/MoonCafe/Areas/Management/Views/Shared/_Navigation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlbWVudFxWaWV3c1xTaGFyZWRcX05hdmlnYXRpb24uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/emrullahkoc/Desktop/MoonCafe/MoonCafe/Areas/Management/Views/Shared/_Scripts.cshtml]
+[C:/Users/emrullahkoc/Desktop/YAZILIM/MoonCafe/MoonCafe/Areas/Management/Views/Shared/_Scripts.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlbWVudFxWaWV3c1xTaGFyZWRcX1NjcmlwdHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/emrullahkoc/Desktop/MoonCafe/MoonCafe/Areas/Management/Views/Shared/_Sidebar.cshtml]
+[C:/Users/emrullahkoc/Desktop/YAZILIM/MoonCafe/MoonCafe/Areas/Management/Views/Shared/_Sidebar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlbWVudFxWaWV3c1xTaGFyZWRcX1NpZGViYXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/emrullahkoc/Desktop/MoonCafe/MoonCafe/Areas/Management/Views/Shared/_Switcher.cshtml]
+[C:/Users/emrullahkoc/Desktop/YAZILIM/MoonCafe/MoonCafe/Areas/Management/Views/Shared/_Switcher.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlbWVudFxWaWV3c1xTaGFyZWRcX1N3aXRjaGVyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/emrullahkoc/Desktop/MoonCafe/MoonCafe/Areas/Management/Views/Ticket/Camera.cshtml]
+[C:/Users/emrullahkoc/Desktop/YAZILIM/MoonCafe/MoonCafe/Areas/Management/Views/Ticket/Camera.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlbWVudFxWaWV3c1xUaWNrZXRcQ2FtZXJhLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/emrullahkoc/Desktop/MoonCafe/MoonCafe/Areas/Management/Views/Ticket/Details.cshtml]
+[C:/Users/emrullahkoc/Desktop/YAZILIM/MoonCafe/MoonCafe/Areas/Management/Views/Ticket/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlbWVudFxWaWV3c1xUaWNrZXRcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/emrullahkoc/Desktop/MoonCafe/MoonCafe/Areas/Management/Views/Ticket/Index.cshtml]
+[C:/Users/emrullahkoc/Desktop/YAZILIM/MoonCafe/MoonCafe/Areas/Management/Views/Ticket/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlbWVudFxWaWV3c1xUaWNrZXRcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/emrullahkoc/Desktop/MoonCafe/MoonCafe/Areas/Management/Views/Ticket/TicketControl.cshtml]
+[C:/Users/emrullahkoc/Desktop/YAZILIM/MoonCafe/MoonCafe/Areas/Management/Views/Ticket/TicketControl.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlbWVudFxWaWV3c1xUaWNrZXRcVGlja2V0Q29udHJvbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/emrullahkoc/Desktop/MoonCafe/MoonCafe/Areas/Management/Views/User/Details.cshtml]
+[C:/Users/emrullahkoc/Desktop/YAZILIM/MoonCafe/MoonCafe/Areas/Management/Views/User/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlbWVudFxWaWV3c1xVc2VyXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/emrullahkoc/Desktop/MoonCafe/MoonCafe/Areas/Management/Views/User/Edit.cshtml]
+[C:/Users/emrullahkoc/Desktop/YAZILIM/MoonCafe/MoonCafe/Areas/Management/Views/User/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlbWVudFxWaWV3c1xVc2VyXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/emrullahkoc/Desktop/MoonCafe/MoonCafe/Areas/Management/Views/User/Index.cshtml]
+[C:/Users/emrullahkoc/Desktop/YAZILIM/MoonCafe/MoonCafe/Areas/Management/Views/User/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlbWVudFxWaWV3c1xVc2VyXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/emrullahkoc/Desktop/MoonCafe/MoonCafe/Areas/Management/Views/_ViewImports.cshtml]
+[C:/Users/emrullahkoc/Desktop/YAZILIM/MoonCafe/MoonCafe/Areas/Management/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlbWVudFxWaWV3c1xfVmlld0ltcG9ydHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/emrullahkoc/Desktop/MoonCafe/MoonCafe/Areas/Management/Views/_ViewStart.cshtml]
+[C:/Users/emrullahkoc/Desktop/YAZILIM/MoonCafe/MoonCafe/Areas/Management/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlbWVudFxWaWV3c1xfVmlld1N0YXJ0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/emrullahkoc/Desktop/MoonCafe/MoonCafe/Views/Account/Login.cshtml]
+[C:/Users/emrullahkoc/Desktop/YAZILIM/MoonCafe/MoonCafe/Views/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/emrullahkoc/Desktop/MoonCafe/MoonCafe/Views/ErrorPage/Error1.cshtml]
+[C:/Users/emrullahkoc/Desktop/YAZILIM/MoonCafe/MoonCafe/Views/ErrorPage/Error1.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXJyb3JQYWdlXEVycm9yMS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/emrullahkoc/Desktop/MoonCafe/MoonCafe/Views/Home/About.cshtml]
+[C:/Users/emrullahkoc/Desktop/YAZILIM/MoonCafe/MoonCafe/Views/Home/About.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBYm91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/emrullahkoc/Desktop/MoonCafe/MoonCafe/Views/Home/Activities.cshtml]
+[C:/Users/emrullahkoc/Desktop/YAZILIM/MoonCafe/MoonCafe/Views/Home/Activities.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBY3Rpdml0aWVzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/emrullahkoc/Desktop/MoonCafe/MoonCafe/Views/Home/ActivitiesDetails.cshtml]
+[C:/Users/emrullahkoc/Desktop/YAZILIM/MoonCafe/MoonCafe/Views/Home/ActivitiesDetails.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBY3Rpdml0aWVzRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/emrullahkoc/Desktop/MoonCafe/MoonCafe/Views/Home/Artists.cshtml]
+[C:/Users/emrullahkoc/Desktop/YAZILIM/MoonCafe/MoonCafe/Views/Home/Artists.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBcnRpc3RzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/emrullahkoc/Desktop/MoonCafe/MoonCafe/Views/Home/ArtistsDetails.cshtml]
+[C:/Users/emrullahkoc/Desktop/YAZILIM/MoonCafe/MoonCafe/Views/Home/ArtistsDetails.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBcnRpc3RzRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/emrullahkoc/Desktop/MoonCafe/MoonCafe/Views/Home/Contact.cshtml]
+[C:/Users/emrullahkoc/Desktop/YAZILIM/MoonCafe/MoonCafe/Views/Home/Contact.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb250YWN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/emrullahkoc/Desktop/MoonCafe/MoonCafe/Views/Home/Index.cshtml]
+[C:/Users/emrullahkoc/Desktop/YAZILIM/MoonCafe/MoonCafe/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/emrullahkoc/Desktop/MoonCafe/MoonCafe/Views/Home/Privacy.cshtml]
+[C:/Users/emrullahkoc/Desktop/YAZILIM/MoonCafe/MoonCafe/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/emrullahkoc/Desktop/MoonCafe/MoonCafe/Views/MyProfile/Edit.cshtml]
+[C:/Users/emrullahkoc/Desktop/YAZILIM/MoonCafe/MoonCafe/Views/MyProfile/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXlQcm9maWxlXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/emrullahkoc/Desktop/MoonCafe/MoonCafe/Views/Shared/Error.cshtml]
+[C:/Users/emrullahkoc/Desktop/YAZILIM/MoonCafe/MoonCafe/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/emrullahkoc/Desktop/MoonCafe/MoonCafe/Views/Shared/_BackToTop.cshtml]
+[C:/Users/emrullahkoc/Desktop/YAZILIM/MoonCafe/MoonCafe/Views/Shared/_BackToTop.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9CYWNrVG9Ub3AuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/emrullahkoc/Desktop/MoonCafe/MoonCafe/Views/Shared/_Copyright.cshtml]
+[C:/Users/emrullahkoc/Desktop/YAZILIM/MoonCafe/MoonCafe/Views/Shared/_Copyright.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Db3B5cmlnaHQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/emrullahkoc/Desktop/MoonCafe/MoonCafe/Views/Shared/_Footer.cshtml]
+[C:/Users/emrullahkoc/Desktop/YAZILIM/MoonCafe/MoonCafe/Views/Shared/_Footer.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Gb290ZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/emrullahkoc/Desktop/MoonCafe/MoonCafe/Views/Shared/_Head.cshtml]
+[C:/Users/emrullahkoc/Desktop/YAZILIM/MoonCafe/MoonCafe/Views/Shared/_Head.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9IZWFkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/emrullahkoc/Desktop/MoonCafe/MoonCafe/Views/Shared/_Navbar.cshtml]
+[C:/Users/emrullahkoc/Desktop/YAZILIM/MoonCafe/MoonCafe/Views/Shared/_Navbar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9OYXZiYXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/emrullahkoc/Desktop/MoonCafe/MoonCafe/Views/Shared/_Scripts.cshtml]
+[C:/Users/emrullahkoc/Desktop/YAZILIM/MoonCafe/MoonCafe/Views/Shared/_Scripts.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9TY3JpcHRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/emrullahkoc/Desktop/MoonCafe/MoonCafe/Views/Shared/_Spinner.cshtml]
+[C:/Users/emrullahkoc/Desktop/YAZILIM/MoonCafe/MoonCafe/Views/Shared/_Spinner.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9TcGlubmVyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/emrullahkoc/Desktop/MoonCafe/MoonCafe/Views/Shared/_Subscribe.cshtml]
+[C:/Users/emrullahkoc/Desktop/YAZILIM/MoonCafe/MoonCafe/Views/Shared/_Subscribe.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9TdWJzY3JpYmUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/emrullahkoc/Desktop/MoonCafe/MoonCafe/Views/Shared/_Topbar.cshtml]
+[C:/Users/emrullahkoc/Desktop/YAZILIM/MoonCafe/MoonCafe/Views/Shared/_Topbar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Ub3BiYXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/emrullahkoc/Desktop/MoonCafe/MoonCafe/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/emrullahkoc/Desktop/YAZILIM/MoonCafe/MoonCafe/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/emrullahkoc/Desktop/MoonCafe/MoonCafe/Views/Ticket/Create.cshtml]
+[C:/Users/emrullahkoc/Desktop/YAZILIM/MoonCafe/MoonCafe/Views/Ticket/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlja2V0XENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/emrullahkoc/Desktop/MoonCafe/MoonCafe/Views/Ticket/MyTicket.cshtml]
+[C:/Users/emrullahkoc/Desktop/YAZILIM/MoonCafe/MoonCafe/Views/Ticket/MyTicket.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlja2V0XE15VGlja2V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/emrullahkoc/Desktop/MoonCafe/MoonCafe/Views/_ViewImports.cshtml]
+[C:/Users/emrullahkoc/Desktop/YAZILIM/MoonCafe/MoonCafe/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/emrullahkoc/Desktop/MoonCafe/MoonCafe/Views/_ViewStart.cshtml]
+[C:/Users/emrullahkoc/Desktop/YAZILIM/MoonCafe/MoonCafe/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/emrullahkoc/Desktop/MoonCafe/MoonCafe/Areas/Management/Views/Shared/_Layout.cshtml]
+[C:/Users/emrullahkoc/Desktop/YAZILIM/MoonCafe/MoonCafe/Areas/Management/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlbWVudFxWaWV3c1xTaGFyZWRcX0xheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = b-0b1abm4rma
 
-[C:/Users/emrullahkoc/Desktop/MoonCafe/MoonCafe/Views/Shared/_Layout.cshtml]
+[C:/Users/emrullahkoc/Desktop/YAZILIM/MoonCafe/MoonCafe/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-ey74quqyak
